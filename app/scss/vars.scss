@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+}
+li {
+	list-style-type: none;
+}
+/* Colors */
+:root {
+	--white: #ffffff;
+	--header: #313131;
+	--text: #333333;
+	--border: rgba(0,0,0,0.3);
+}

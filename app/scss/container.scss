@@ -1,0 +1,12 @@
+/* Container */
+.container {
+	height: 100%;
+		width: 84%;
+		margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 95%;
+	}
+}

@@ -1,0 +1,19 @@
+.title {
+	&_h1 {
+		display: none;
+	}
+	&_h2 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+@media (min-width: 768px) {
+	.title {
+		&_h1 {
+			display: block;
+			font-size: 28px;
+			line-height: 36px;
+		}
+	}
+}

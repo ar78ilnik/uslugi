@@ -1,0 +1,11 @@
+/* Button */
+.button {
+	&_burger {
+		font-size: 0;
+		line-height: 0;
+		background-color: transparent;
+		border: 0;
+		width: 34px;
+		height: 21px;
+	}
+}

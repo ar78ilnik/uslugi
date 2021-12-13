@@ -1,0 +1,25 @@
+/* Promo */
+.promo {
+	padding-bottom: 24px;
+	border-bottom: 1px solid var(--border);
+	margin-bottom: 24px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+@media (min-width: 768px) {
+	.promo {
+		display: grid;
+		grid-template-columns: auto 249px;
+		grid-template-rows: 36px 140px;
+		&__text {
+			align-self: end;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.promo {
+		grid-template-columns: auto 341px;
+	}
+}
