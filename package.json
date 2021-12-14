@@ -1,7 +1,6 @@
 {
   "name": "uslugi",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,7 +27,8 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-svgstore": "^9.0.0",
-    "postcss": "^8.4.4",
-    "sass": "^1.44.0"
-  }
+    "postcss": "^8.4.5",
+    "sass": "^1.45.0"
+  },
+  "description": ""
 }

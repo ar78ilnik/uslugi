@@ -4,27 +4,30 @@
 		<div class="header__search">
 			<input type="search" class="header__input" name="q" placeholder="Поиск">
 		</div>
-		<ul class="list list_menu">
-			<li class="list__item"><a href="#" class="link">Главная</a></li>
-			<li class="list__item"><a href="#" class="link">О компании</a></li>
-			<li class="list__item"><a href="#" class="link">Оплата и доставка</a></li>
-			<li class="list__item"><a href="#" class="link">Наши работы</a></li>
-			<li class="list__item"><a href="#" class="link">Контакты</a></li>
-		</ul>
-		<div class="header__user">
-			<svg class="icon icon_header">
-				<use xlink:href="img/sprite.svg#svg1"></use>
+		<nav class="menu">
+			<ul class="list list_menu" id="list_menu">
+				<li class="list__item"><a href="#" class="link">Главная</a></li>
+				<li class="list__item"><a href="#" class="link">О компании</a></li>
+				<li class="list__item"><a href="#" class="link">Оплата и доставка</a></li>
+				<li class="list__item"><a href="#" class="link">Наши работы</a></li>
+				<li class="list__item"><a href="#" class="link">Контакты</a></li>
+			</ul>
+			<div class="menu__user">
+				<svg class="icon icon_header">
+					<use xlink:href="img/sprite.svg#svg1"></use>
+				</svg>
+			</div>
+			<div class="menu__favorite">
+				<svg class="icon icon_header">
+					<use xlink:href="img/sprite.svg#svg1"></use>
+				</svg>
+			</div>
+			<button class="menu__button" type="button" aria-expanded="false" aria-controls="list_menu">
+			<svg class="icon icon_menu" aria-hidden="true">
+				<use class="menu__icon_menu" xlink:href="img/sprite.svg#burger"></use>
+				<use class="menu__icon_cross" xlink:href="img/sprite.svg#cross"></use>
 			</svg>
-		</div>
-		<div class="header__favorite">
-			<svg class="icon icon_header">
-				<use xlink:href="img/sprite.svg#svg1"></use>
-			</svg>
-		</div>
-		<button class="button button_burger">
-		<svg class="icon icon_burger">
-			<use xlink:href="img/sprite.svg#burger"></use>
-		</svg>
-		</button>
+			</button>
+		</nav>
 	</div>
 </header>
