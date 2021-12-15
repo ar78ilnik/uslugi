@@ -3,4 +3,9 @@
 	&_menu {
 		display: none;
 	}
+	&__item {
+		&_footer {
+			margin-bottom: 32px;
+		}
+	}
 }

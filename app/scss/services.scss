@@ -1,5 +1,6 @@
 /* Services */
 .services {
+	margin-bottom: 60px;
 	&__card {
 		background: linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
 		background-repeat: no-repeat;
@@ -7,7 +8,7 @@
 		padding: 24px;
 		margin-bottom: 10px;
 	}
-	&:nth-of-type(1) {
+	&:nth-child(1) {
 		background-image: url(../img/services1.png);
 		background-size: 120px 110px;
 		background-position: 95% 95%;
@@ -32,6 +33,7 @@
 		font-size: 14px;
 		line-height: 18px;
 		color: var(--text-light);
+		margin-bottom: 46px;
 	}
 }
 
@@ -41,7 +43,8 @@
 		flex-wrap: wrap;
 		justify-content: space-around;
 		&__card {
-		flex-basis: 48%;
+			flex-basis: 40%;
+			margin-bottom: 20px;
 		}
 	}
 }

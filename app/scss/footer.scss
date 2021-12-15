@@ -1,0 +1,12 @@
+/* Footer */
+.footer {
+	background-color: var(--black);
+	color: var(--white);
+	&__tel {
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-size: 24px;
+		line-height: 32px;
+		color: var(--white);
+		text-decoration: none;
+	}
+}
