@@ -1,0 +1,15 @@
+/* Link */
+.link {
+	text-decoration: none;
+	&_blue {
+		display: inline-block;
+		font-size: 12px;
+		line-height: 12px;
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-weight: 700;
+		color: var(--white);
+		padding: 14px 24px;
+		background-color: var(--link-bgc);
+		border-radius: 5px;
+	}
+}

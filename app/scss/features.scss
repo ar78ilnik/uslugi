@@ -2,4 +2,50 @@
 .features {
 	font-size: 12px;
 	line-height: 20px;
+	&__list {
+		padding-left: 21px;
+		margin-top: 24px;
+	}
+	&__item {
+		margin-bottom: 24px;
+		position: relative;
+	}
+	&__item::after {
+		display: block;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		content: url('../img/ring.png');
+		top: 0;
+		left: -20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.features {
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&__item {
+			flex-basis: 40%;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.features {
+		&__item {
+			flex-basis: 18%;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.features {
+		&__item {
+			flex-basis: 22%;
+		}
+	}
 }
