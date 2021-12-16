@@ -9,9 +9,14 @@
 
 @media (min-width: 1200px) {
 	.list {
+		&__item {
+			display: flex;
+			align-items: center;
+		}
 		&_menu {
 			display: flex;
 			justify-content: space-between;
+			height: 100%;
 		}
 	}
 }

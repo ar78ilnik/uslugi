@@ -7,7 +7,7 @@
 		margin-bottom: 10px;
 	}
 	&__card:nth-child(1) {
-		background: url(../img/services1.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+		background: url(../img/services1@1x-mobile.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
 		background-repeat: no-repeat;
 		background-position: 95% 95%;
 	}
@@ -22,9 +22,9 @@
 		background-position: 100% 95%;
 	}
 	&__card:nth-child(4) {
-		background-image: url(../img/services1.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+		background-image: url(../img/services4@1x-mobile.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
 		background-repeat: no-repeat;
-		background-position: 100% 100%;
+		background-position: 100% 120%;
 	}
 	&__text {
 		font-size: 14px;
