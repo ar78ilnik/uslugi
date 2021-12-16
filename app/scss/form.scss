@@ -38,6 +38,9 @@
 	&__check-box {
 		margin-bottom: 20px;
 	}
+	&__blue {
+		color: var(--blue);
+	}
 }
 
 @media (min-width: 768px) {

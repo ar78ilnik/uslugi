@@ -1,0 +1,35 @@
+/* Menu */
+.menu {
+	&__button {
+		width: 34px;
+		height: 21px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background-color: transparent;
+	}
+	&__close {
+		width: 34px;
+		height: 21px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background-color: transparent;
+	}
+}
+
+@media (min-width: 1024px) {
+	.menu {
+		&__user {
+			justify-self: end;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.menu {
+		&__button {
+			display: none;
+		}
+	}
+}

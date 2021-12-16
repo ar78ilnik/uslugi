@@ -3,7 +3,27 @@
 	height: 60px;
 	background-color: var(--header);
 	color: var(--white);
+	&__logo {
+		font-family: 'Montserrat-Regular', sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+	}
 	&__search {
 		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		&__search {
+			display: block;
+		}
+		&__input {
+			width: 100%;
+			background-color: var(--header);
+			border: 0;
+			border-bottom: 1px solid rgba(255,255,255,0.2);
+			color: var(--input-text);
+		}
 	}
 }

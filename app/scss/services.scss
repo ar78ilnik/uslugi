@@ -2,31 +2,28 @@
 .services {
 	margin-bottom: 60px;
 	&__card {
-		background: linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
-		background-repeat: no-repeat;
 		border-radius: 10px;
 		padding: 24px;
 		margin-bottom: 10px;
 	}
-	&:nth-child(1) {
-		background-image: url(../img/services1.png);
-		background-size: 120px 110px;
+	&__card:nth-child(1) {
+		background: url(../img/services1.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+		background-repeat: no-repeat;
 		background-position: 95% 95%;
-
 	}
-	&:nth-child(2) {
-		background-image: url(../img/services2.png);
-		background-size: 126px 110px;
+	&__card:nth-child(2) {
+		background-image: url(../img/services1.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+		background-repeat: no-repeat;
 		background-position: 100% 95%;
 	}
-	&:nth-child(3) {
-		background-image: url(../img/services3.png);
-		background-size: 120px 110px;
+	&__card:nth-child(3) {
+		background-image: url(../img/services1.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+		background-repeat: no-repeat;
 		background-position: 100% 95%;
 	}
-	&:nth-child(4) {
-		background-image: url(../img/services4.png);
-		background-size: 120px 110px;
+	&__card:nth-child(4) {
+		background-image: url(../img/services1.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+		background-repeat: no-repeat;
 		background-position: 100% 100%;
 	}
 	&__text {
@@ -45,6 +42,14 @@
 		&__card {
 			flex-basis: 40%;
 			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.services {
+		&__card {
+			flex-basis: 573px;
 		}
 	}
 }

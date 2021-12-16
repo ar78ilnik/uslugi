@@ -1,4 +1,17 @@
 .body {
 	font-family: 'Montserrat-Regular', sans-serif;
 	color: var(--text);
+	position: relative;
+	&__back {
+		display: none;
+	}
+	&__back_opened {
+		display: block;
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(28,28,28,0.5);
+	}
 }

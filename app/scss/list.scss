@@ -1,11 +1,17 @@
 /* List */
 .list {
-	&_menu {
-		display: none;
-	}
 	&__item {
 		&_footer {
 			margin-bottom: 32px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.list {
+		&_menu {
+			display: flex;
+			justify-content: space-between;
 		}
 	}
 }

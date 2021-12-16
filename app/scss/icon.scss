@@ -1,12 +1,13 @@
 /* Icon */
 .icon {
+	fill: var(--white);
 	&_header {
 		width: 20px;
 		height: 20px;
 	}
-	&_burger {
+	&_menu {
 		width: 34px;
 		height: 21px;
-		stroke: green;
+		stroke-width: 3px;
 	}
 }
