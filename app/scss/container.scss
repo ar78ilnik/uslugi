@@ -35,6 +35,10 @@
 			grid-template-columns: 1fr min-content min-content min-content 34px;
 			column-gap: 32px; 
 		}
+		&_footer {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr;
+		}
 	}
 }
 

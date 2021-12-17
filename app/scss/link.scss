@@ -21,6 +21,27 @@
 	&_footer {
 		color: var(--white);
 	}
+	&_footer-sub {
+		display: block;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	&_footer-sub::after {
+		display: block;
+		width: 16px;
+		height: 16px;
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: url(../img/arrow.png);
+	}
+	&_sub {
+		font-size: 16px;
+		line-height: 40px;
+		text-decoration: none;
+		color: var(--white);
+	}
 }
 
 @media (min-width: 768px) {
