@@ -3,10 +3,42 @@
 	background-color: var(--black);
 	color: var(--white);
 	&__tel {
+		display: inline-block;
 		font-family: 'Montserrat-Bold', sans-serif;
 		font-size: 24px;
 		line-height: 32px;
 		color: var(--white);
 		text-decoration: none;
+		margin-bottom: 26px;
+		padding-left: 38px;
+		position: relative;
+	}
+	&__tel::after {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 28px;
+		height: 29px;
+		background-image: url(../img/tel.png);
+	}
+	&__adress {
+		display: inline-block;
+		position: relative;
+		padding-left: 38px;
+	}
+	&__adress::after {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 23px;
+		height: 30px;
+		background-image: url(../img/point.png);
+	}
+	&__info {
+		margin-bottom: 20px;
 	}
 }

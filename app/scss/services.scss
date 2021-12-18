@@ -4,7 +4,12 @@
 	&__card {
 		border-radius: 10px;
 		padding: 24px;
+		min-height: 260px;
 		margin-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
 	}
 	&__card:nth-child(1) {
 		background: url(../img/services1@1x-mobile.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
@@ -30,7 +35,6 @@
 		font-size: 14px;
 		line-height: 18px;
 		color: var(--text-light);
-		margin-bottom: 46px;
 	}
 }
 
@@ -40,8 +44,16 @@
 		flex-wrap: wrap;
 		justify-content: space-around;
 		&__card {
-			flex-basis: 40%;
+			flex-basis: 50%;
 			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.services {
+		&__card {
+			min-height: 316px;
 		}
 	}
 }
@@ -50,6 +62,30 @@
 	.services {
 		&__card {
 			flex-basis: 573px;
+			min-height: 358px;
+		}
+		&__card:nth-child(1) {
+			background: url(../img/services1@1x-desktop.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+			background-repeat: no-repeat;
+			background-position: 100% 100%;
+		}
+		&__card:nth-child(2) {
+			background-image: url(../img/services1.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+			background-repeat: no-repeat;
+			background-position: 100% 95%;
+		}
+		&__card:nth-child(3) {
+			background-image: url(../img/services1.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+			background-repeat: no-repeat;
+			background-position: 100% 95%;
+		}
+		&__card:nth-child(4) {
+			background-image: url(../img/services4@1x-desktop.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+			background-repeat: no-repeat;
+			background-position: 100% 120%;
+		}
+		&__text {
+			margin-bottom: 150px;
 		}
 	}
 }

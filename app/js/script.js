@@ -1,8 +1,8 @@
 (() => {
     let header = document.querySelector('.header'),
         menuButton = header.querySelector('.menu__button'),
-        menuClose = header.querySelector('.menu__close'),
-        popup = header.querySelector('.container_popup'),
+        menuClose = document.querySelector('.menu__close'),
+        popup = document.querySelector('.container_popup'),
         bodyBack = document.querySelector('.body__back'),
         listInstall = document.querySelector('.list_install'),
         linkFooterSub = document.querySelectorAll('.link_footer-sub'),
@@ -27,15 +27,13 @@
             listSubFooter[i].style.display = 'none';
         }
     }
-    hideContent();
 
     function showContent(a) {
         if (listSubFooter[a].style.display == 'none') {
-            console.log('true');
             listSubFooter[a].style.display = 'block';
         }
     }
-
+    
     listInstall.addEventListener('click', function(event) {
         event.preventDefault();
         let target = event.target;

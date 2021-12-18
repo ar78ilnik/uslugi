@@ -10,11 +10,12 @@
 	}
 	&__close {
 		width: 34px;
-		height: 21px;
+		height: 34px;
 		margin: 0;
 		padding: 0;
 		border: 0;
 		background-color: transparent;
+		align-self: flex-end;
 	}
 }
 

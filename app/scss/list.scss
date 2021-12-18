@@ -1,22 +1,43 @@
 /* List */
 .list {
+	&_header {
+		display: none;
+	}
 	&__item {
 		&_footer {
 			margin-bottom: 32px;
 		}
 	}
+	&__submenu_footer {
+		display: none;
+	}
 }
 
 @media (min-width: 1200px) {
 	.list {
+		&_header {
+			display: flex;
+			justify-content: space-between;
+		}
+		&_install {
+			display: flex;
+			justify-content: space-between;
+		}
 		&__item {
 			display: flex;
 			align-items: center;
+			&_footer {
+				flex-direction: column;
+				align-items: flex-start;
+			}
 		}
 		&_menu {
 			display: flex;
 			justify-content: space-between;
 			height: 100%;
 		}
+		&__submenu_footer {
+			display: block;
+	}
 	}
 }
