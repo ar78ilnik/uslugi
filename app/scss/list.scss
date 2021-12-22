@@ -19,7 +19,15 @@
 
         &_about {
             flex-basis: 40%;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &_def {
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
     }
 
@@ -28,9 +36,62 @@
         font-size: 12px;
         line-height: 16px;
     }
+    &__title {
+        display: block;
+        font-size: 14px;
+        line-height: 28px;
+        color: var(--black);
+        font-style: normal;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    &__title::after {
+        display: block;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/arrow-def.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 6px;
+        left: -20px;
+    }
 
     &__submenu_footer {
         display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .list {
+        &_about {
+            min-height: 150px;
+        }
+        &__item {
+            &_about {
+                flex-basis: 20%;
+            }
+            &_def {
+                padding-left: 35px;
+            }
+        }
+        &__title::after {
+            left: -30px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .list {
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__item {
+            &_about {
+                flex-basis: 19%;
+            }
+        }
     }
 }
 
@@ -49,7 +110,9 @@
         &__item {
             display: flex;
             align-items: center;
-
+            &_def {
+                align-items: flex-start;
+            }
             &_footer {
                 flex-direction: column;
                 align-items: flex-start;

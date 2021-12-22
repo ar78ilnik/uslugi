@@ -4,6 +4,8 @@
     min-height: 526px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44)), url('../img/about-mobile.png');
     color: var(--white);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 22px;
     display: flex;
     flex-direction: column;
@@ -11,9 +13,15 @@
     align-items: center;
 }
 
+@media (min-width: 1024px) {
+    .about {
+        padding: 60px;
+    }
+}
+
 @media (min-width: 1200px) {
     .about {
         min-height: 482px;
-        background: url('../img/about-bg.png'), rgba(0, 0, 0, 0.44);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44)), url('../img/about-desktop.png');
     }
 }

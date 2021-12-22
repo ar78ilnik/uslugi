@@ -1,80 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Монтаж вентиляции</title>
-</head>
-
-<body class="body">
-    @@include('html_components/_header.html')
-    @@include('html_components/_popup.html')
-    <div class="container">
-        <section class="trand">
-            <div class="trand__item">
-                <a class="trand__link">
-                    <img class="trand__icon" src="img/trand1.png" alt="">
-                    <span class="trand__text">Отопительное оборудование Vaillant</span>
-                </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>Монтаж вентиляции</title>
+    </head>
+    <body class="body">
+        @@include('html_components/_header.html')
+        @@include('html_components/_popup.html')
+        <div class="container">
+            <section class="trand">
+                <div class="trand__item">
+                    <a class="trand__link">
+                        <img class="trand__icon" src="img/trand1.png" alt="">
+                        <span class="trand__text">Отопительное оборудование Vaillant</span>
+                    </a>
+                </div>
+                <div class="trand__item">
+                    <a href="ventilation.html" class="trand__link">
+                        <img class="trand__icon" src="img/trand2.png" alt="">
+                        <span class="trand__text">Водяные панели отопления</span>
+                    </a>
+                </div>
+                <div class="trand__item">
+                    <a href="ventilation.html" class="trand__link">
+                        <img class="trand__icon" src="img/trand3.png" alt="">
+                        <span class="trand__text">Приточно-вытяжная вентиляция</span>
+                    </a>
+                </div>
+                <div class="trand__item">
+                    <a href="ventilation.html" class="trand__link">
+                        <img class="trand__icon" src="img/trand4.png" alt="">
+                        <span class="trand__text">Услуги монтажа</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="about">
+            <div class="crumbs crumbs_about">
+                <span class="crumbs__item">Главная -</span>
+                <span class="crumbs__item">Наши услуги</span>
             </div>
-            <div class="trand__item">
-                <a href="ventilation.html" class="trand__link">
-                    <img class="trand__icon" src="img/trand2.png" alt="">
-                    <span class="trand__text">Водяные панели отопления</span>
-                </a>
-            </div>
-            <div class="trand__item">
-                <a href="ventilation.html" class="trand__link">
-                    <img class="trand__icon" src="img/trand3.png" alt="">
-                    <span class="trand__text">Приточно-вытяжная вентиляция</span>
-                </a>
-            </div>
-            <div class="trand__item">
-                <a href="ventilation.html" class="trand__link">
-                    <img class="trand__icon" src="img/trand4.png" alt="">
-                    <span class="trand__text">Услуги монтажа</span>
-                </a>
+            <h1 class="title title_about">Монтаж вентиляции</h1>
+            <ul class="list list_about">
+                <li class="list__item list__item_about">
+                    <svg class="icon icon_about">
+                        <use xlink:href="img/sprite.svg#about1"></use>
+                    </svg>
+                    <p class="list__text">Многолетний опыт наших специалистов</p>
+                </li>
+                <li class="list__item list__item_about">
+                    <svg class="icon icon_about">
+                        <use xlink:href="img/sprite.svg#about2"></use>
+                    </svg>
+                    <p class="list__text">Официальные дилеры мировых произыодителей</p>
+                </li>
+                <li class="list__item list__item_about">
+                    <svg class="icon icon_about">
+                        <use xlink:href="img/sprite.svg#about3"></use>
+                    </svg>
+                    <p class="list__text">Вся техника обеспечена гарантийным бслуживанием</p>
+                </li>
+                <li class="list__item list__item_about">
+                    <svg class="icon icon_about">
+                        <use xlink:href="img/sprite.svg#about4"></use>
+                    </svg>
+                    <p class="list__text">Регулярные поставки и наличие на складе</p>
+                </li>
+            </ul>
+            <a href="#" class="link link_blue">Получить консультацию</a>
+        </div>
+        <section class="def">
+            <div class="container">
+                <p class="def__header">Компания Интросистема, одна из лучших вентиляционных компаний Юга России, является лидером в установке и проектировании систем вентиляции</p>
+                <p class="def__text">От школ до гостиниц и домов, квартир и т.д. — мы можем удовлетворить любые потребности в вентиляции. Исходя из выше сказанного берется максимально разрешенное техусловие на газ </p>
+                <article class="def__system">
+                    <header class="def__header">
+                        Стандартная система отопления это:
+                    </header>
+                    <ul class="list list_def">
+                        <li class="list__item list__item_def">
+                            <dfn class="list__title">Приборы отопления: радиаторы, конвекторы</dfn>
+                            <p class="def__text">При широком разнообразии приборов отопления различных производителей, которые представлены на современном рынке России, бывает трудно выбрать необходимый тип.</p>
+                        </li>
+                        <li class="list__item list__item_def">
+                            <dfn class="list__title">Запорная и терморегулирующая арматура</dfn>
+                            <p class="def__text">Обеспечивает эффективное регулирование теплоотдачи приборов отопления, что позволяет поддерживать комфортную температуру. Наша компания предлагает надежные</p>
+                        </li>
+                        <li class="list__item list__item_def">
+                            <dfn class="list__title">Трасса теплоснабжения</dfn>
+                            <p class="def__text">Трассы теплоснабжения являются важнейшей частью городских коммунальных, частных и промышленных систем, обеспечивая подачу тепла и горячей воды в здания, круглый год</p>
+                        </li>
+                    </ul>
+                </article>
             </div>
         </section>
-    </div>
-    <div class="about">
-        <div class="crumbs crumbs_about">
-            <span class="crumbs__item">Главная -</span>
-            <span class="crumbs__item">Наши услуги</span>
-        </div>
-        <h1 class="title title_about">Монтаж вентиляции</h1>
-        <ul class="list list_about">
-            <li class="list__item list__item_about">
-                <svg class="icon icon_about">
-                    <use xlink:href="img/sprite.svg#about1"></use>
-                </svg>
-                <p class="list__text">Многолетний опыт наших специалистов</p>
-            </li>
-            <li class="list__item list__item_about">
-                <svg class="icon icon_about">
-                    <use xlink:href="img/sprite.svg#about2"></use>
-                </svg>
-                <p class="list__text">Официальные дилеры мировых произыодителей</p>
-            </li>
-            <li class="list__item list__item_about">
-                <svg class="icon icon_about">
-                    <use xlink:href="img/sprite.svg#about3"></use>
-                </svg>
-                <p class="list__text">Вся техника обеспечена гарантийным бслуживанием</p>
-            </li>
-            <li class="list__item list__item_about">
-                <svg class="icon icon_about">
-                    <use xlink:href="img/sprite.svg#about4"></use>
-                </svg>
-                <p class="list__text">Регулярные поставки и наличие на складе</p>
-            </li>
-        </ul>
-        <a href="#" class="link link_blue">Получить консультацию</a>
-    </div>
-</body>
-@@include('html_components/_footer.html')
-<script src="js/script.js"></script>
-
+    </body>
+    @@include('html_components/_footer.html')
+    <script src="js/script.js"></script>
 </html>

@@ -18,3 +18,12 @@
         height: 52px;
     }
 }
+
+@media (min-width: 1024px) {
+    .icon {
+        &_about {
+            width: 76px;
+            height: 76px;
+        }
+    }
+}

@@ -36,3 +36,11 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    .title {
+        &_about {
+            font-size: 36px;
+        }
+    }
+}
