@@ -1,13 +1,18 @@
 /* Crumbs */
 .crumbs {
-	margin-top: 40px;
-	font-size: 12px;
-	line-height: 16px;
+    padding-top: 40px;
+    font-size: 12px;
+    line-height: 16px;
+
+    &_about {
+        padding: 0;
+        align-self: flex-start;
+    }
 }
 
 @media (min-width: 768px) {
-	.crumbs {
-		margin-top: 60px;
-		margin-bottom: 24px;
-	}
+    .crumbs {
+        margin-top: 60px;
+        margin-bottom: 24px;
+    }
 }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Монтаж вентиляции</title>
+</head>
+
+<body class="body">
+    @@include('html_components/_header.html')
+    @@include('html_components/_popup.html')
+    <div class="container">
+        <section class="trand">
+            <div class="trand__item">
+                <a class="trand__link">
+                    <img class="trand__icon" src="img/trand1.png" alt="">
+                    <span class="trand__text">Отопительное оборудование Vaillant</span>
+                </a>
+            </div>
+            <div class="trand__item">
+                <a href="ventilation.html" class="trand__link">
+                    <img class="trand__icon" src="img/trand2.png" alt="">
+                    <span class="trand__text">Водяные панели отопления</span>
+                </a>
+            </div>
+            <div class="trand__item">
+                <a href="ventilation.html" class="trand__link">
+                    <img class="trand__icon" src="img/trand3.png" alt="">
+                    <span class="trand__text">Приточно-вытяжная вентиляция</span>
+                </a>
+            </div>
+            <div class="trand__item">
+                <a href="ventilation.html" class="trand__link">
+                    <img class="trand__icon" src="img/trand4.png" alt="">
+                    <span class="trand__text">Услуги монтажа</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <div class="about">
+        <div class="crumbs crumbs_about">
+            <span class="crumbs__item">Главная -</span>
+            <span class="crumbs__item">Наши услуги</span>
+        </div>
+        <h1 class="title title_about">Монтаж вентиляции</h1>
+        <ul class="list list_about">
+            <li class="list__item list__item_about">
+                <svg class="icon icon_about">
+                    <use xlink:href="img/sprite.svg#about1"></use>
+                </svg>
+                <p class="list__text">Многолетний опыт наших специалистов</p>
+            </li>
+            <li class="list__item list__item_about">
+                <svg class="icon icon_about">
+                    <use xlink:href="img/sprite.svg#about2"></use>
+                </svg>
+                <p class="list__text">Официальные дилеры мировых произыодителей</p>
+            </li>
+            <li class="list__item list__item_about">
+                <svg class="icon icon_about">
+                    <use xlink:href="img/sprite.svg#about3"></use>
+                </svg>
+                <p class="list__text">Вся техника обеспечена гарантийным бслуживанием</p>
+            </li>
+            <li class="list__item list__item_about">
+                <svg class="icon icon_about">
+                    <use xlink:href="img/sprite.svg#about4"></use>
+                </svg>
+                <p class="list__text">Регулярные поставки и наличие на складе</p>
+            </li>
+        </ul>
+        <a href="#" class="link link_blue">Получить консультацию</a>
+    </div>
+</body>
+@@include('html_components/_footer.html')
+<script src="js/script.js"></script>
+
+</html>

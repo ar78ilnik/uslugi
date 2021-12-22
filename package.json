@@ -28,7 +28,7 @@
     "gulp-sass": "^5.0.0",
     "gulp-svgstore": "^9.0.0",
     "postcss": "^8.4.5",
-    "sass": "^1.45.0"
+    "sass": "^1.45.1"
   },
   "description": ""
 }

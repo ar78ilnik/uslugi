@@ -1,38 +1,45 @@
 /* Trand */
 .trand {
-	display: none;
+    display: none;
 }
+
 @media (min-width: 1024px) {
-	.trand {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 20px;
-		&__item {
-			display: flex;
-			column-gap: 16px;
-		}
-		&__icon {
-			width: 35px;
-			height: 35px;
-		}
-		&__text {
-			display: block;
-			font-family: 'Montserrat-Medium', sans-serif;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 24px;
-			width: 125px;
-		}
-	}
+    .trand {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        &__link {
+            display: flex;
+            column-gap: 16px;
+            font-family: 'Montserrat-Medium', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        &__icon {
+            width: 35px;
+            height: 35px;
+        }
+
+        &__text {
+            display: block;
+            width: 125px;
+        }
+    }
 }
 
 @media (min-width: 1200px) {
-	.trand {
-		&__item {
-			column-gap: 24px;
-		}
-		&__text {
-			width: 200px;
-		}
-	}
+    .trand {
+        &__item {
+            column-gap: 24px;
+        }
+
+        &__text {
+            width: 200px;
+        }
+    }
 }

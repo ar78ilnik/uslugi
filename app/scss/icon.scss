@@ -1,13 +1,20 @@
 /* Icon */
 .icon {
-	fill: var(--white);
-	&_header {
-		width: 20px;
-		height: 20px;
-	}
-	&_menu {
-		width: 34px;
-		height: 34px;
-		stroke-width: 3px;
-	}
+    fill: var(--white);
+
+    &_header {
+        width: 20px;
+        height: 20px;
+    }
+
+    &_menu {
+        width: 34px;
+        height: 34px;
+        stroke-width: 3px;
+    }
+
+    &_about {
+        width: 52px;
+        height: 52px;
+    }
 }

@@ -1,0 +1,19 @@
+/* About */
+.about {
+    width: 100%;
+    min-height: 526px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44)), url('../img/about-mobile.png');
+    color: var(--white);
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .about {
+        min-height: 482px;
+        background: url('../img/about-bg.png'), rgba(0, 0, 0, 0.44);
+    }
+}

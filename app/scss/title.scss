@@ -1,30 +1,38 @@
 .title {
-	&_h1 {
-		display: none;
-	}
-	&_h2 {
-		font-size: 20px;
-		line-height: 24px;
-	}
-	&_h3 {
-		font-size: 16px;
-		line-height: 24px;
-	}
-	&_footer {
-		font-family: 'Montserrat-Bold', sans-serif;
-		font-size: 20px;
-		line-height: 24px;
-		color: var(--footer-title);
-		margin-bottom: 26px;
-	}
+    &_h1 {
+        display: none;
+    }
+
+    &_h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &_h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &_about {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    &_footer {
+        font-family: 'Montserrat-Bold', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--footer-title);
+        margin-bottom: 26px;
+    }
 }
 
 @media (min-width: 768px) {
-	.title {
-		&_h1 {
-			display: block;
-			font-size: 28px;
-			line-height: 36px;
-		}
-	}
+    .title {
+        &_h1 {
+            display: block;
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
 }
