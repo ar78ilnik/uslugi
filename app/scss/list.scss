@@ -23,11 +23,22 @@
             flex-direction: column;
             align-items: center;
         }
-        &_def {
+
+        &_intro {
             padding-left: 20px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+        }
+
+        &_benefits {
+            font-size: 14px;
+            color: var(--black);
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            column-gap: 10px;
         }
     }
 
@@ -36,6 +47,7 @@
         font-size: 12px;
         line-height: 16px;
     }
+
     &__title {
         display: block;
         font-size: 14px;
@@ -45,12 +57,13 @@
         position: relative;
         margin-bottom: 10px;
     }
+
     &__title::after {
         display: block;
         content: '';
         width: 15px;
         height: 15px;
-        background-image: url(../img/arrow-def.png);
+        background-image: url(../img/arrow-intro.png);
         background-repeat: no-repeat;
         position: absolute;
         top: 6px;
@@ -67,14 +80,29 @@
         &_about {
             min-height: 150px;
         }
+
+        &_benefits {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         &__item {
             &_about {
                 flex-basis: 20%;
             }
-            &_def {
+
+            &_intro {
                 padding-left: 35px;
             }
+
+            &_benefits {
+                font-size: 16px;
+                width: 30%;
+            }
         }
+
         &__title::after {
             left: -30px;
         }
@@ -87,9 +115,14 @@
             font-size: 16px;
             line-height: 24px;
         }
+
         &__item {
             &_about {
                 flex-basis: 19%;
+            }
+
+            &_benefits {
+                font-size: 20px;
             }
         }
     }
@@ -110,9 +143,15 @@
         &__item {
             display: flex;
             align-items: center;
-            &_def {
+
+            &_intro {
                 align-items: flex-start;
             }
+
+            &_benefits {
+                justify-content: flex-start;
+            }
+
             &_footer {
                 flex-direction: column;
                 align-items: flex-start;

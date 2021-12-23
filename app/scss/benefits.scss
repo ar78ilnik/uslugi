@@ -1,0 +1,15 @@
+/* Benefits */
+.benefits {
+    &__text {
+        flex-shrink: 1;
+        color: var(--text);
+    }
+}
+
+@media (min-width: 1024px) {
+    .benefits {
+        &__text {
+            font-size: 20px;
+        }
+    }
+}
