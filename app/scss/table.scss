@@ -1,4 +1,23 @@
 /* Table */
+.table {
+    width: 100%;
+    &__row:nth-child(odd) {
+        background-color: var(--odd);
+    }
+    &__thead th {
+        vertical-align: super;
+        font-size: 14px;
+    }
+    &__row td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 12px;
+        text-align: center;
+        border-bottom: 1px solid #e8e9eb;
+        color: var(--text);
+    }
+}
+
 @media (max-width: 768px) {
     .table {
         width: 100%;
@@ -28,5 +47,15 @@
             font-weight: 600;
         }
     }
+}
 
+@media (min-width: 1024px) {
+    .table {
+        &__thead {
+            font-size: 16px;
+        }
+        &__row td {
+            font-size: 14px;
+        }
+    }
 }
