@@ -1,6 +1,13 @@
 /* Calc */
 .calc {
-	&__title {
-		text-align: center;
-	}
+    background-color: var(--odd);
+
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__form {
+        font-size: 14px;
+    }
 }
