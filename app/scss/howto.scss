@@ -1,0 +1,39 @@
+/* Howto */
+.howto {
+	min-height: 500px;
+	background-color: var(--odd);
+	&__det {
+		padding: 20px;
+		background-color: var(--white);
+		margin-bottom: 20px;
+	}
+	&__sum {
+		list-style:none;
+		position: relative;
+		font-size: 14px;
+		cursor: pointer;
+	}
+	&__sum::after {
+		content: '+';
+		color: var(--blue);
+		position: absolute;
+		right: 0;
+	}
+	&__list {
+		padding-top: 20px;
+	}
+	&__list li {
+		line-height: 24px;
+		margin-bottom: 12px;
+		list-style: inside;
+	}
+	details[open] > &__sum::after {
+		content: '—';
+	}
+	details[open] {
+		border-left: 3px solid var(--blue);
+	}
+	/*&__sum ~ * {
+		background-color: green;
+	}*/
+}

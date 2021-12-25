@@ -3,7 +3,6 @@
     height: 100%;
     width: 95%;
     margin: 0 auto;
-    font-size: 0;
 
     &_popup {
         display: none;
@@ -94,6 +93,11 @@
         &_order {
             grid-row-gap: 15px;
         }
+        &_howto {
+            width: 786px;
+            margin-right: auto;
+            margin-left: 40px;
+        }
     }
 }
 
@@ -109,6 +113,11 @@
         }
         &_order {
             width: 970px;
+        }
+        &_howto {
+            width: 786px;
+            margin-right: auto;
+            margin-left: 40px;
         }
 
         &_footer {
