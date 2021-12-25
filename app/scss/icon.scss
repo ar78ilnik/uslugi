@@ -22,6 +22,19 @@
         width: 30px;
         height: 30px;
     }
+    &_order {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (min-width: 768px) {
+    .icon {
+        &_order {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    }
 }
 
 @media (min-width: 1024px) {

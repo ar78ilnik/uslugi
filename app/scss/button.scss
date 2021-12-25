@@ -8,4 +8,26 @@
 		width: 34px;
 		height: 21px;
 	}
+	&_calc {
+		display: inline-block;
+		font-size: 12px;
+		line-height: 12px;
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-weight: 700;
+		color: var(--white);
+		padding: 14px 24px;
+		background-color: var(--blue);
+		border-radius: 5px;
+		border: 0;
+		grid-column: 3/4;
+		grid-row: 3/4;
+	}
+}
+
+@media (min-width: 1024px) {
+	.button {
+		&_calc {
+			justify-self: start;
+		}
+	}
 }
