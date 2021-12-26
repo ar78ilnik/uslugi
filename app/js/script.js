@@ -4,9 +4,7 @@
         menuClose = document.querySelector('.menu__close'),
         popup = document.querySelector('.container_popup'),
         bodyBack = document.querySelector('.body__back'),
-        listInstall = document.querySelector('.list_install'),
-        linkFooterSub = document.querySelectorAll('.link_footer-sub'),
-        listSubFooter = document.querySelectorAll('.list__submenu_footer');
+        footerDet = document.querySelectorAll('.footer__det');
 
     menuButton.addEventListener('click', () => {
         let expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
@@ -22,29 +20,9 @@
         bodyBack.classList.toggle('body__back_opened');
     })
 
-    function hideContent() {
-        for (let i = 0; i < listSubFooter.length; i++) {
-            listSubFooter[i].style.display = 'none';
+    if(window.innerWidth > 1220) {
+        for(let i = 0; i < footerDet.length; i++) {
+            footerDet[i].setAttribute('open', true);
         }
     }
-
-    function showContent(a) {
-        if (listSubFooter[a].style.display == 'none') {
-            listSubFooter[a].style.display = 'block';
-        }
-    }
-    
-    listInstall.addEventListener('click', function(event) {
-        event.preventDefault();
-        let target = event.target;
-        if (target && target.classList.contains('link_footer-sub')) {
-            for (let i = 0; i < linkFooterSub.length; i++) {
-                if (target == linkFooterSub[i]) {
-                    hideContent();
-                    showContent(i);
-                    break;
-                }
-            }
-        }
-    });
 })();

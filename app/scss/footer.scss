@@ -41,4 +41,18 @@
 	&__info {
 		margin-bottom: 20px;
 	}
+	&__sum {
+		list-style: none;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__sum {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 24px;
+	}
+	&__det[open] .icon_sum {
+		transform: rotate(180deg);
+	}
 }

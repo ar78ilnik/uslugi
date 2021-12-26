@@ -27,6 +27,9 @@
         font-size: 16px;
         line-height: 24px;
     }
+    &_h3-sertif {
+        display: none;
+    }
 
     &_about {
         text-align: center;
@@ -60,6 +63,15 @@
             grid-column: 1/2;
             grid-row: 1/2;
         }
+        &_h2-team {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        &_h3-sertif {
+            display: inline;
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
     }
 }
 
@@ -67,6 +79,10 @@
     .title {
         &_about {
             font-size: 36px;
+        }
+        &_h2-attend {
+            grid-column: 1/2;
+            grid-row: 1/2;
         }
     }
 }

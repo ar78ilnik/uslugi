@@ -26,6 +26,10 @@
         width: 48px;
         height: 48px;
     }
+    &_sum {
+        width: 16px;
+        height: 11px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -47,6 +51,14 @@
         &_benefits {
             width: 40px;
             height: 40px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .icon {
+        &_sum {
+            display: none;
         }
     }
 }

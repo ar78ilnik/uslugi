@@ -26,8 +26,14 @@
 			width: 100%;
 		}
 	}
+	&_attend {
+		display: none;
+	}
 	&_footer {
 		color: var(--white);
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	&_footer-sub {
 		display: block;
@@ -62,6 +68,20 @@
 				grid-column: 3/4;
 				grid-row: 1/2;
 			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.link {
+		&_attend {
+			display: inline;
+			font-weight: 500;
+			color: var(--blue);
+			grid-column: 4/5;
+			grid-row: 1/2;
+			justify-self: end;
+			align-self: center;
 		}
 	}
 }

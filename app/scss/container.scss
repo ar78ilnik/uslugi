@@ -39,7 +39,6 @@
         grid-row-gap: 30px;
         justify-items: center;
     }
-
     &_footer {
         display: grid;
         grid-gap: 24px;
@@ -70,6 +69,11 @@
             grid-template-rows: repeat(6, min-content);
             justify-items: start;
         }
+        &_team {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            grid-template-rows: repeat(3, min-content);
+        }
 
         &_footer {
             padding-top: 40px;
@@ -97,6 +101,11 @@
             width: 786px;
             margin-right: auto;
             margin-left: 40px;
+        }
+        &_attend {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: min-content 1fr;
         }
     }
 }
