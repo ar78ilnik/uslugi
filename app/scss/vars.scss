@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    animation: all 2s ease-in-out;
 }
 
 ul {
@@ -19,6 +20,12 @@ li {
 
 fieldset {
     border: 0;
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 /* Colors */

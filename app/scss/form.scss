@@ -4,11 +4,7 @@
 
     &_question {
         background-color: var(--form);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 0;
     }
 
     &__wrapper {
@@ -23,9 +19,8 @@
         width: 65%;
         font-size: 14px;
         line-height: 18px;
-        margin-top: 10px;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     &__fieldset {
@@ -100,7 +95,6 @@
 
     &__label {
         display: block;
-        margin-bottom: 10px;
 
         &_check {
             padding-left: 40px;
@@ -144,6 +138,8 @@
     }
 
     &__check-box {
+        display: flex;
+        column-gap: 10px;
         margin-bottom: 20px;
     }
 
@@ -165,6 +161,7 @@
             grid-gap: 24px;
             width: 674px;
         }
+
         &__fieldset {
             padding: 0;
         }
@@ -175,18 +172,22 @@
 
         &__camp {
             margin: 0;
+
             &_volume {
                 display: flex;
             }
+
             &_check {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 20px;
             }
         }
+
         &__box {
             margin: 0;
             flex-basis: 40%;
+
             &:first-child {
                 flex-basis: 100%;
             }

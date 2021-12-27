@@ -6,6 +6,7 @@
     &_h2 {
         font-size: 28px;
         line-height: 48px;
+        margin-bottom: 30px;
     }
 
     &_h2-table,
@@ -19,6 +20,7 @@
         line-height: 46px;
         margin-bottom: 15px;
     }
+
     &_h2-order {
         justify-self: start;
     }
@@ -27,6 +29,7 @@
         font-size: 16px;
         line-height: 24px;
     }
+
     &_h3-sertif {
         display: none;
     }
@@ -59,14 +62,17 @@
             font-size: 28px;
             line-height: 36px;
         }
+
         &_h2-order {
             grid-column: 1/2;
             grid-row: 1/2;
         }
+
         &_h2-team {
             grid-column: 1/2;
             grid-row: 1/2;
         }
+
         &_h3-sertif {
             display: inline;
             grid-column: 2/3;
@@ -80,6 +86,7 @@
         &_about {
             font-size: 36px;
         }
+
         &_h2-attend {
             grid-column: 1/2;
             grid-row: 1/2;

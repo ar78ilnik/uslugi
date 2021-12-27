@@ -1,58 +1,69 @@
 /* Footer */
 .footer {
-	background-color: var(--black);
-	color: var(--white);
-	&__tel {
-		display: inline-block;
-		font-family: 'Montserrat-Bold', sans-serif;
-		font-size: 24px;
-		line-height: 32px;
-		color: var(--white);
-		text-decoration: none;
-		margin-bottom: 26px;
-		padding-left: 38px;
-		position: relative;
-	}
-	&__tel::after {
-		display: block;
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 28px;
-		height: 29px;
-		background-image: url(../img/tel.png);
-	}
-	&__adress {
-		display: inline-block;
-		position: relative;
-		padding-left: 38px;
-	}
-	&__adress::after {
-		display: block;
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 23px;
-		height: 30px;
-		background-image: url(../img/point.png);
-	}
-	&__info {
-		margin-bottom: 20px;
-	}
-	&__sum {
-		list-style: none;
-		cursor: pointer;
-		display: flex;
-		justify-content: space-between;
-	}
-	&__sum {
-		font-weight: 500;
-		font-size: 18px;
-		line-height: 24px;
-	}
-	&__det[open] .icon_sum {
-		transform: rotate(180deg);
-	}
+    background-color: var(--black);
+    color: var(--white);
+
+    &__tel {
+        display: inline-block;
+        font-family: 'Montserrat-Bold', sans-serif;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--white);
+        text-decoration: none;
+        margin-bottom: 26px;
+        padding-left: 38px;
+        position: relative;
+    }
+
+    &__tel::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 28px;
+        height: 29px;
+        background-image: url(../img/tel.png);
+    }
+
+    &__adress {
+        display: inline-block;
+        position: relative;
+        padding-left: 38px;
+    }
+
+    &__adress::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 23px;
+        height: 30px;
+        background-image: url(../img/point.png);
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    &__sum {
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__sum {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__det[open] .icon_sum {
+        transform: rotate(180deg);
+    }
 }

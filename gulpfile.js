@@ -1,4 +1,3 @@
-
 'use strict';
 
 /* подключаем плагины */
@@ -7,6 +6,7 @@ const scss = require('gulp-sass')(require('sass'));
 const fileInclude = require('gulp-file-include');
 const debug = require('gulp-debug');
 const bs = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');
 const plumber = require('gulp-plumber');
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
@@ -88,6 +88,14 @@ function style() {
         .pipe(scss())
         .pipe(debug({
             title: 'scss'
+        }))
+        .pipe(gulp.dest('dist/css'))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(debug({
+            title: 'autoprefixer'
         }))
         .pipe(gulp.dest('dist/css'))
         .pipe(csso())
