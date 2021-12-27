@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ar78ilnik/uslugi#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.0",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",

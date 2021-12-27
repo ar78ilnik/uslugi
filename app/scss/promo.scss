@@ -3,23 +3,62 @@
     border-bottom: 1px solid var(--border);
     font-size: 14px;
     line-height: 24px;
+    padding-top: 210px;
+    position: relative;
+}
+.promo::after {
+    content: '';
+    display: block;
+    width: 323px;
+    height: 208px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    background-image: url(../img/promo-360.png);
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
     .promo {
-        display: grid;
-        grid-template-columns: auto 249px;
-        grid-template-rows: 36px 140px;
-        grid-column-gap: 20px;
-
+        padding-top: 0;
         &__text {
             align-self: end;
+            grid-column: 1/2;
+            grid-row: 2/3;
         }
+    }
+    .promo::after {
+        content: '';
+        display: block;
+        width: 249px;
+        height: 252px;
+        position: absolute;
+        top: 0;
+        left: 68%;
+        background-image: url(../img/promo-768.png);
+        background-repeat: no-repeat;
     }
 }
 
 @media (min-width: 1024px) {
     .promo {
-        grid-template-columns: auto 341px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .promo {
+        background-image: none;
+        position: relative;
+    }
+    .promo::after {
+        content: '';
+        display: block;
+        width: 538px;
+        height: 347px;
+        position: absolute;
+        top: -90px;
+        right: -90px;
+        background-image: url(../img/promo-1200.png);
+        background-repeat: no-repeat;
     }
 }
