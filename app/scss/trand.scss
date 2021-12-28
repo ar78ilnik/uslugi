@@ -5,6 +5,8 @@
 
 @media (min-width: 1024px) {
     .trand {
+        display: flex;
+        justify-content: space-between;
         &__link {
             display: flex;
             column-gap: 16px;
@@ -25,12 +27,6 @@
             display: block;
             width: 125px;
         }
-    }
-}
-
-@media (min-width: 1024px) {
-    .trand {
-        display: block;
     }
 }
 

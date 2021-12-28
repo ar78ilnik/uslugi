@@ -23,12 +23,13 @@
 @media (min-width: 768px) {
     .promo {
         padding-top: 0;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: repeat(2, min-content);
-        grid-row-gap: 20px;
         min-height: 180px;
-
+        &__article {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
         &__text {
             align-self: end;
             grid-column: 1/2;
@@ -39,24 +40,37 @@
     .promo::after {
         content: '';
         display: block;
-        width: 249px;
+        width: 400px;
         height: 252px;
         position: absolute;
         top: 0;
-        right: 0;
+        left: 70%;
         background-image: url(../img/promo-768.png);
         background-repeat: no-repeat;
     }
 }
 
 @media (min-width: 1024px) {
-    .promo {}
+    .promo::after {
+        content: '';
+        display: block;
+        width: 498px;
+        height: 321px;
+        position: absolute;
+        top: -110px;
+        left: 70%;
+        background-image: url(../img/promo-1024.png);
+        background-repeat: no-repeat;
+    }
 }
 
 @media (min-width: 1200px) {
     .promo {
         background-image: none;
         position: relative;
+        &__article {
+            width: 60%;
+        }
     }
 
     .promo::after {

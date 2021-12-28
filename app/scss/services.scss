@@ -44,10 +44,6 @@
 
 @media (min-width: 768px) {
     .services {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
         &__card {
             flex-basis: 50%;
             margin-bottom: 20px;
