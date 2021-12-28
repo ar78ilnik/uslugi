@@ -5,7 +5,9 @@
     line-height: 24px;
     padding-top: 210px;
     position: relative;
+    width: 100%;
 }
+
 .promo::after {
     content: '';
     display: block;
@@ -21,12 +23,19 @@
 @media (min-width: 768px) {
     .promo {
         padding-top: 0;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(2, min-content);
+        grid-row-gap: 20px;
+        min-height: 180px;
+
         &__text {
             align-self: end;
             grid-column: 1/2;
             grid-row: 2/3;
         }
     }
+
     .promo::after {
         content: '';
         display: block;
@@ -34,15 +43,14 @@
         height: 252px;
         position: absolute;
         top: 0;
-        left: 68%;
+        right: 0;
         background-image: url(../img/promo-768.png);
         background-repeat: no-repeat;
     }
 }
 
 @media (min-width: 1024px) {
-    .promo {
-    }
+    .promo {}
 }
 
 @media (min-width: 1200px) {
@@ -50,6 +58,7 @@
         background-image: none;
         position: relative;
     }
+
     .promo::after {
         content: '';
         display: block;
