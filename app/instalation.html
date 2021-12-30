@@ -15,7 +15,19 @@
         <section class="trand">
             <div class="trand__item">
                 <a class="trand__link">
-                    <img class="trand__icon" src="img/trand1.png" alt="">
+                    <picture>
+                        <source srcset="img/trand1-1200@1x.avif" media="(min-width: 1200px)" type="image/avif" />
+                        <source srcset="img/trand1-1200@1x.webp" media="(min-width: 1200px)" type="image/webp" />
+                        <source srcset="img/trand1-1024@1x.avif" media="(min-width: 1024px)" type="image/avif" />
+                        <source srcset="img/trand1-1024@1x.webp" media="(min-width: 1024px)" type="image/webp" />
+                        <source srcset="img/trand1-768@1x.avif" media="(min-width: 768px)" type="image/avif" />
+                        <source srcset="img/trand1-768@1x.webp" media="(min-width: 768px)" type="image/webp" />
+                        <source srcset="img/trand1@1x.avif" type="image/avif" />
+                        <source srcset="img/trand1@1x.webp" type="image/webp" />
+                        <img class="trand__icon" srcset="img/trand1@1x.png, img/trand1@2x.png 2x, 768w,
+                                img/trand1-1024@1x.png img/trand1@2x.png 2x, 1024w,
+                                img/trand1-1200@1x.png 1200w" src="img/trand1.png" alt="">
+                    </picture>
                     <span class="trand__text">Отопительное оборудование Vaillant</span>
                 </a>
             </div>
