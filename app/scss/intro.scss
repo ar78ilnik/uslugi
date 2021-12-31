@@ -1,9 +1,5 @@
 /* Intro */
 .intro {
-    padding-top: 300px;
-    background-image: url(../img/intro1-360.png);
-    background-repeat: no-repeat;
-    background-position: 50% 7%;
 
     &__header {
         font-family: Montserrat-Bold, sans-serif;
@@ -18,23 +14,5 @@
         line-height: 20px;
         color: var(--install-text);
         margin-bottom: 50px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .intro {
-        padding-top: 50px;
-        padding-left: 360px;
-        background-image: url(../img/intro1-1024.png);
-        background-position: 0 7%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .intro {
-        padding-top: 50px;
-        padding-left: 360px;
-        background-image: url(../img/intro1-1200.png);
-        background-position: 0 7%;
     }
 }

@@ -1,311 +1,272 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Монтаж вентиляции</title>
-</head>
-
-<body class="body">
-    @@include('html_components/_header.html')
-    @@include('html_components/_popup.html')
-    <div class="container">
-        <section class="trand">
-            <div class="trand__item">
-                <a class="trand__link">
-                    <picture>
-                        <source srcset="img/trand1-1200@1x.avif" media="(min-width: 1200px)" type="image/avif" />
-                        <source srcset="img/trand1-1200@1x.webp" media="(min-width: 1200px)" type="image/webp" />
-                        <source srcset="img/trand1-1024@1x.avif" media="(min-width: 1024px)" type="image/avif" />
-                        <source srcset="img/trand1-1024@1x.webp" media="(min-width: 1024px)" type="image/webp" />
-                        <source srcset="img/trand1-768@1x.avif" media="(min-width: 768px)" type="image/avif" />
-                        <source srcset="img/trand1-768@1x.webp" media="(min-width: 768px)" type="image/webp" />
-                        <source srcset="img/trand1@1x.avif" type="image/avif" />
-                        <source srcset="img/trand1@1x.webp" type="image/webp" />
-                        <img class="trand__icon" srcset="img/trand1@1x.png, img/trand1@2x.png 2x, 768w,
-                                img/trand1-1024@1x.png img/trand1@2x.png 2x, 1024w,
-                                img/trand1-1200@1x.png 1200w" src="img/trand1.png" alt="">
-                    </picture>
-                    <span class="trand__text">Отопительное оборудование Vaillant</span>
-                </a>
-            </div>
-            <div class="trand__item">
-                <a href="ventilation.html" class="trand__link">
-                    <img class="trand__icon" src="img/trand2.png" alt="">
-                    <span class="trand__text">Водяные панели отопления</span>
-                </a>
-            </div>
-            <div class="trand__item">
-                <a href="ventilation.html" class="trand__link">
-                    <img class="trand__icon" src="img/trand3.png" alt="">
-                    <span class="trand__text">Приточно-вытяжная вентиляция</span>
-                </a>
-            </div>
-            <div class="trand__item">
-                <a href="ventilation.html" class="trand__link">
-                    <img class="trand__icon" src="img/trand4.png" alt="">
-                    <span class="trand__text">Услуги монтажа</span>
-                </a>
-            </div>
-        </section>
-    </div>
-    <div class="about">
-        <div class="crumbs crumbs_about">
-            <span class="crumbs__item">Главная -</span>
-            <span class="crumbs__item">Наши услуги</span>
-        </div>
-        <h1 class="title title_about">Монтаж вентиляции</h1>
-        <ul class="list list_about">
-            <li class="list__item list__item_about">
-                <svg class="icon icon_about">
-                    <use xlink:href="img/sprite.svg#about1"></use>
-                </svg>
-                <p class="list__text">Многолетний опыт наших специалистов</p>
-            </li>
-            <li class="list__item list__item_about">
-                <svg class="icon icon_about">
-                    <use xlink:href="img/sprite.svg#about2"></use>
-                </svg>
-                <p class="list__text">Официальные дилеры мировых произыодителей</p>
-            </li>
-            <li class="list__item list__item_about">
-                <svg class="icon icon_about">
-                    <use xlink:href="img/sprite.svg#about3"></use>
-                </svg>
-                <p class="list__text">Вся техника обеспечена гарантийным бслуживанием</p>
-            </li>
-            <li class="list__item list__item_about">
-                <svg class="icon icon_about">
-                    <use xlink:href="img/sprite.svg#about4"></use>
-                </svg>
-                <p class="list__text">Регулярные поставки и наличие на складе</p>
-            </li>
-        </ul>
-        <a href="#" class="link link_blue">Получить консультацию</a>
-    </div>
-    <section class="intro">
-        <div class="container">
-            <p class="intro__header">Компания Интросистема, одна из лучших вентиляционных компаний Юга России, является лидером в установке и проектировании систем вентиляции</p>
-            <p class="intro__text">От школ до гостиниц и домов, квартир и т.д. — мы можем удовлетворить любые потребности в вентиляции. Исходя из выше сказанного берется максимально разрешенное техусловие на газ </p>
-            <article class="intro__system">
-                <header class="intro__header">
-                    Стандартная система отопления это:
-                </header>
-                <ul class="list list_intro">
-                    <li class="list__item list__item_intro">
-                        <dfn class="list__title">Приборы отопления: радиаторы, конвекторы</dfn>
-                        <p class="intro__text">При широком разнообразии приборов отопления различных производителей, которые представлены на современном рынке России, бывает трудно выбрать необходимый тип.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>Монтаж вентиляции</title>
+    </head>
+    <body class="body">
+        @@include('html_components/_header.html')
+        @@include('html_components/_popup.html')
+        @@include('html_components/_trand.html')
+        <div class="about">
+            <div class="container container_about">
+                <div class="crumbs crumbs_about">
+                    <span class="crumbs__item">Главная -</span>
+                    <span class="crumbs__item">Наши услуги</span>
+                </div>
+                <h1 class="title title_about">Монтаж вентиляции</h1>
+                <ul class="list list_about">
+                    <li class="list__item list__item_about">
+                        <svg class="icon icon_about">
+                            <use xlink:href="img/sprite.svg#about1"></use>
+                        </svg>
+                        <p class="list__text">Многолетний опыт наших специалистов</p>
                     </li>
-                    <li class="list__item list__item_intro">
-                        <dfn class="list__title">Запорная и терморегулирующая арматура</dfn>
-                        <p class="intro__text">Обеспечивает эффективное регулирование теплоотдачи приборов отопления, что позволяет поддерживать комфортную температуру. Наша компания предлагает надежные</p>
+                    <li class="list__item list__item_about">
+                        <svg class="icon icon_about">
+                            <use xlink:href="img/sprite.svg#about2"></use>
+                        </svg>
+                        <p class="list__text">Официальные дилеры мировых произыодителей</p>
                     </li>
-                    <li class="list__item list__item_intro">
-                        <dfn class="list__title">Трасса теплоснабжения</dfn>
-                        <p class="intro__text">Трассы теплоснабжения являются важнейшей частью городских коммунальных, частных и промышленных систем, обеспечивая подачу тепла и горячей воды в здания, круглый год</p>
+                    <li class="list__item list__item_about">
+                        <svg class="icon icon_about">
+                            <use xlink:href="img/sprite.svg#about3"></use>
+                        </svg>
+                        <p class="list__text">Вся техника обеспечена гарантийным бслуживанием</p>
+                    </li>
+                    <li class="list__item list__item_about">
+                        <svg class="icon icon_about">
+                            <use xlink:href="img/sprite.svg#about4"></use>
+                        </svg>
+                        <p class="list__text">Регулярные поставки и наличие на складе</p>
                     </li>
                 </ul>
-            </article>
-        </div>
-    </section>
-    <section class="benefits">
-        <div class="container">
-            <h2 class="title title_h2">Преимущества панелей водяного отопления</h2>
-            <ul class="list list_benefits">
-                <li class="list__item list__item_benefits">
-                    <svg class="icon icon_benefits">
-                        <use xlink:href="img/sprite.svg#benefits"></use>
-                    </svg>
-                    <span class="benefits__text">Удобство проектирования</span>
-                </li>
-                <li class="list__item list__item_benefits">
-                    <svg class="icon icon_benefits">
-                        <use xlink:href="img/sprite.svg#benefits"></use>
-                    </svg>
-                    <span class="benefits__text">Высокий потенциал энергосбережения</span>
-                </li>
-                <li class="list__item list__item_benefits">
-                    <svg class="icon icon_benefits">
-                        <use xlink:href="img/sprite.svg#benefits"></use>
-                    </svg>
-                    <span class="benefits__text">Низкие затраты на эксплуатацию</span>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="spend">
-        <div class="container">
-            <div class="spend__title">
-                <h2 class="title title_h2">Таблица расходов на отопление дома 180 кв.м</h2>
-                <span class="title__text"> с учетом стоимости 1 кВт электричества = 3,5 руб.</span>
-            </div>
-            <table class="table">
-                <thead class="table__thead">
-                    <tr>
-                        <th>Вид энергии</th>
-                        <th>Суточный расход</th>
-                        <th>Стоимость отопительного сезона</th>
-                        <th>Стоимость внутренней смены</th>
-                        <th>Стоимость котла и оборудования</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="table__row">
-                        <td aria-lebel="Вид энергии">Магистральный газ</td>
-                        <td aria-lebel="Суточный расход">21 м3</td>
-                        <td aria-lebel="Стоимость отопительного сезона">15 284 руб.</td>
-                        <td aria-lebel="Стоимость внутренней смены">400 т.р.</td>
-                        <td aria-lebel="Стоимость котла и оборудования">50-100 т.р.</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td aria-lebel="Вид энергии">Электричество</td>
-                        <td aria-lebel="Суточный расход">180 кВт</td>
-                        <td aria-lebel="Стоимость отопительного сезона">160 620 руб.</td>
-                        <td aria-lebel="Стоимость внутренней смены">200-500 т.р.</td>
-                        <td aria-lebel="Стоимость котла и оборудования">50 т.р.</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td aria-lebel="Вид энергии">Солярка</td>
-                        <td aria-lebel="Суточный расход">22 кг</td>
-                        <td aria-lebel="Стоимость отопительного сезона">115 880 руб.</td>
-                        <td aria-lebel="Стоимость внутренней смены">450 т.р.</td>
-                        <td aria-lebel="Стоимость котла и оборудования">50 т.р.</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td aria-lebel="Вид энергии">Сжиженный газ</td>
-                        <td aria-lebel="Суточный расход">24 кг</td>
-                        <td aria-lebel="Стоимость отопительного сезона">118 440 руб.</td>
-                        <td aria-lebel="Стоимость внутренней смены">500 т.р.</td>
-                        <td aria-lebel="Стоимость котла и оборудования">350 т.р.</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td aria-lebel="Вид энергии">Тепловой насос</td>
-                        <td aria-lebel="Суточный расход">40 кВт</td>
-                        <td aria-lebel="Стоимость отопительного сезона">30 540 руб.</td>
-                        <td aria-lebel="Стоимость внутренней смены">510 т.р.</td>
-                        <td aria-lebel="Стоимость котла и оборудования">300 т.р.</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td aria-lebel="Вид энергии">Дрова</td>
-                        <td aria-lebel="Суточный расход">48 кг</td>
-                        <td aria-lebel="Стоимость отопительного сезона">18 640 руб.</td>
-                        <td aria-lebel="Стоимость внутренней смены">100-300 т.р.</td>
-                        <td aria-lebel="Стоимость котла и оборудования">100 т.р.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <section class="calc">
-        <div class="container container_calc">
-            <div class="calc__title">
-                <h2 class="title title_h2">Онлайн-<span style="color: blue;">калькулятор</span></h2>
-                <span class="title__text">Позволяет оценить во сколько для вас обойдется монтаж вентиляции</span>
-            </div>
-            <form action="process.php" class="form calc__form">
-                <fieldset class="form__fieldset">
-                    <div class="form__camp form__camp_select">
-                        <label class="form__label" for="room">Тип помещения</label>
-                        <select class="form__select" name="room" id="room">
-                            <option value="">Выберите пункт</option>
-                            <option value="value1">Жилое помещение</option>
-                            <option value="value2">Складское помещение</option>
-                            <option value="value3">Общепит</option>
-                            <option value="value4">Торговое помещение</option>
-                        </select>
-                    </div>
-                    <div class="form__camp form__camp_volume">
-                        <div class="form__volume">
-                            <label for="square" class="form__label form__label_volume">Площадь помещения</label>
-                            <input type="text" class="form__input form__input_volume" id="square" name="square" placeholder="20">
-                            кв.метров
-                        </div>
-                        <div class="form__volume">
-                            <label for="height" class="form__label form__label_volume">Высота потолков</label>
-                            <input type="text" class="form__input form__input_volume" id="height" name="height" placeholder="3">
-                            метров
-                        </div>
-                    </div>
-                    <div class="form__camp form__camp_check">
-                        <div class="form__box">
-                            <label class="form__label">Состав системы:</label>
-                        </div>
-                        <div class="form__box">
-                            <label class="form__label form__label_check">
-                                <input class="form__input form__input_check" type="checkbox" name="one" value="true" checked>
-                                <span class="form__tetra"></span>
-                                Приточная система
-                            </label>
-                        </div>
-                        <div class="form__box">
-                            <label class="form__label form__label_check">
-                                <input class="form__input form__input_check" type="checkbox" name="one" value="true">
-                                <span class="form__tetra"></span>
-                                Вытяжная система
-                            </label>
-                        </div>
-                        <div class="form__box">
-                            <label class="form__label form__label_check">
-                                <input class="form__input form__input_check" type="checkbox" name="one" value="true">
-                                <span class="form__tetra"></span>
-                                Охлаждение
-                            </label>
-                        </div>
-                        <div class="form__box">
-                            <label class="form__label form__label_check">
-                                <input class="form__input form__input_check" type="checkbox" name="one" value="true">
-                                <span class="form__tetra"></span>
-                                Рекулерация
-                            </label>
-                        </div>
-                        <div class="form__box">
-                            <label class="form__label form__label_check">
-                                <input class="form__input form__input_check" type="checkbox" name="one" value="true" disabled>
-                                <span class="form__tetra"></span>
-                                Увлажнение
-                            </label>
-                        </div>
-                        <div class="form__box">
-                            <label class="form__label form__label_check">
-                                <input class="form__input form__input_check" type="checkbox" name="one" value="true" checked disabled>
-                                <span class="form__tetra"></span>
-                                Дымоудаление
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-            <section class="calc__result">
-                <span class="calc__title">Итого</span>
-                <span class="calc__sum">0,00 ₽</span>
-                <p class="calc__note">* Для точного определения стоимости монтажа, проконсультируйтесь с нашим инженером</p>
-            </section>
-            <button class="button button_calc" type="button">Рассчитать</button>
-        </div>
-    </section>
-    <section class="order">
-        <div class="container container_order">
-            <h2 class="title title_h2 title_h2-order">Как <span style="color: blue;">оформить заказ</span>?</h2>
-            <svg class="icon icon_order">
-                <use xlink:href="img/sprite.svg#order-phone"></use>
-            </svg>
-            <span class="order__text">Оставьте заявку онлайн или по телефону</span>
-            <span class="order__tel">8 918 407-27-44</span>
-            <a href="#" class="link link_blue">Оставить заявку</a>
-            <span class="order__how">Сделать заказ, или получить консультацию очень просто, всего несколько шагов</span>
-            <div class="order__steps">
-                <span class="order__step">Инженер выезжает на объект и производит расчет параметров бесплатно</span>
-                <span class="order__step">Занимаемся производством инженерных систем и поставкой оборудования</span>
-                <span class="order__step">Выполняем монтажные и пуско-наладочные работы</span>
+                <a href="#" class="link link_blue">Получить консультацию</a>
             </div>
         </div>
-    </section>
-    <section class="howto">
-        <div class="container container_howto">
-            <h2 class="title title_h2">Ответы на <span style="color: blue;">часто задаваемые вопросы</span></h2>
-            <details class="howto__det">
+        <section class="intro">
+            <div class="container container_intro">
+                <p class="intro__header">Компания Интросистема, одна из лучших вентиляционных компаний Юга России, является лидером в установке и проектировании систем вентиляции</p>
+                <p class="intro__text">От школ до гостиниц и домов, квартир и т.д. — мы можем удовлетворить любые потребности в вентиляции. Исходя из выше сказанного берется максимально разрешенное техусловие на газ </p>
+                <article class="intro__system">
+                    <header class="intro__header">
+                        Стандартная система отопления это:
+                    </header>
+                    <ul class="list list_intro">
+                        <li class="list__item list__item_intro">
+                            <dfn class="list__title">Приборы отопления: радиаторы, конвекторы</dfn>
+                            <p class="intro__text">При широком разнообразии приборов отопления различных производителей, которые представлены на современном рынке России, бывает трудно выбрать необходимый тип.</p>
+                        </li>
+                        <li class="list__item list__item_intro">
+                            <dfn class="list__title">Запорная и терморегулирующая арматура</dfn>
+                            <p class="intro__text">Обеспечивает эффективное регулирование теплоотдачи приборов отопления, что позволяет поддерживать комфортную температуру. Наша компания предлагает надежные</p>
+                        </li>
+                        <li class="list__item list__item_intro">
+                            <dfn class="list__title">Трасса теплоснабжения</dfn>
+                            <p class="intro__text">Трассы теплоснабжения являются важнейшей частью городских коммунальных, частных и промышленных систем, обеспечивая подачу тепла и горячей воды в здания, круглый год</p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <h2 class="title title_h2">Преимущества панелей водяного отопления</h2>
+                <ul class="list list_benefits">
+                    <li class="list__item list__item_benefits">
+                        <svg class="icon icon_benefits">
+                            <use xlink:href="img/sprite.svg#benefits"></use>
+                        </svg>
+                        <span class="benefits__text">Удобство проектирования</span>
+                    </li>
+                    <li class="list__item list__item_benefits">
+                        <svg class="icon icon_benefits">
+                            <use xlink:href="img/sprite.svg#benefits"></use>
+                        </svg>
+                        <span class="benefits__text">Высокий потенциал энергосбережения</span>
+                    </li>
+                    <li class="list__item list__item_benefits">
+                        <svg class="icon icon_benefits">
+                            <use xlink:href="img/sprite.svg#benefits"></use>
+                        </svg>
+                        <span class="benefits__text">Низкие затраты на эксплуатацию</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="spend">
+            <div class="container">
+                <div class="spend__title">
+                    <h2 class="title title_h2">Таблица расходов на отопление дома 180 кв.м</h2>
+                    <span class="title__text"> с учетом стоимости 1 кВт электричества = 3,5 руб.</span>
+                </div>
+                <table class="table">
+                    <thead class="table__thead">
+                        <tr>
+                            <th>Вид энергии</th>
+                            <th>Суточный расход</th>
+                            <th>Стоимость отопительного сезона</th>
+                            <th>Стоимость внутренней смены</th>
+                            <th>Стоимость котла и оборудования</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table__row">
+                            <td aria-lebel="Вид энергии">Магистральный газ</td>
+                            <td aria-lebel="Суточный расход">21 м3</td>
+                            <td aria-lebel="Стоимость отопительного сезона">15 284 руб.</td>
+                            <td aria-lebel="Стоимость внутренней смены">400 т.р.</td>
+                            <td aria-lebel="Стоимость котла и оборудования">50-100 т.р.</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td aria-lebel="Вид энергии">Электричество</td>
+                            <td aria-lebel="Суточный расход">180 кВт</td>
+                            <td aria-lebel="Стоимость отопительного сезона">160 620 руб.</td>
+                            <td aria-lebel="Стоимость внутренней смены">200-500 т.р.</td>
+                            <td aria-lebel="Стоимость котла и оборудования">50 т.р.</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td aria-lebel="Вид энергии">Солярка</td>
+                            <td aria-lebel="Суточный расход">22 кг</td>
+                            <td aria-lebel="Стоимость отопительного сезона">115 880 руб.</td>
+                            <td aria-lebel="Стоимость внутренней смены">450 т.р.</td>
+                            <td aria-lebel="Стоимость котла и оборудования">50 т.р.</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td aria-lebel="Вид энергии">Сжиженный газ</td>
+                            <td aria-lebel="Суточный расход">24 кг</td>
+                            <td aria-lebel="Стоимость отопительного сезона">118 440 руб.</td>
+                            <td aria-lebel="Стоимость внутренней смены">500 т.р.</td>
+                            <td aria-lebel="Стоимость котла и оборудования">350 т.р.</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td aria-lebel="Вид энергии">Тепловой насос</td>
+                            <td aria-lebel="Суточный расход">40 кВт</td>
+                            <td aria-lebel="Стоимость отопительного сезона">30 540 руб.</td>
+                            <td aria-lebel="Стоимость внутренней смены">510 т.р.</td>
+                            <td aria-lebel="Стоимость котла и оборудования">300 т.р.</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td aria-lebel="Вид энергии">Дрова</td>
+                            <td aria-lebel="Суточный расход">48 кг</td>
+                            <td aria-lebel="Стоимость отопительного сезона">18 640 руб.</td>
+                            <td aria-lebel="Стоимость внутренней смены">100-300 т.р.</td>
+                            <td aria-lebel="Стоимость котла и оборудования">100 т.р.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="calc">
+            <div class="container container_calc">
+                <div class="calc__title">
+                    <h2 class="title title_h2">Онлайн-<span style="color: blue;">калькулятор</span></h2>
+                    <span class="title__text">Позволяет оценить во сколько для вас обойдется монтаж вентиляции</span>
+                </div>
+                <form action="process.php" class="form calc__form">
+                    <fieldset class="form__fieldset">
+                        <div class="form__camp form__camp_select">
+                            <label class="form__label" for="room">Тип помещения</label>
+                            <select class="form__select" name="room" id="room">
+                                <option value="">Выберите пункт</option>
+                                <option value="value1">Жилое помещение</option>
+                                <option value="value2">Складское помещение</option>
+                                <option value="value3">Общепит</option>
+                                <option value="value4">Торговое помещение</option>
+                            </select>
+                        </div>
+                        <div class="form__camp form__camp_volume">
+                            <div class="form__volume">
+                                <label for="square" class="form__label form__label_volume">Площадь помещения</label>
+                                <input type="text" class="form__input form__input_volume" id="square" name="square" placeholder="20">
+                                кв.метров
+                            </div>
+                            <div class="form__volume">
+                                <label for="height" class="form__label form__label_volume">Высота потолков</label>
+                                <input type="text" class="form__input form__input_volume" id="height" name="height" placeholder="3">
+                                метров
+                            </div>
+                        </div>
+                        <div class="form__camp form__camp_check">
+                            <div class="form__box">
+                                <label class="form__label">Состав системы:</label>
+                            </div>
+                            <div class="form__box">
+                                <label class="form__label form__label_check">
+                                    <input class="form__input form__input_check" type="checkbox" name="one" value="true" checked>
+                                    <span class="form__tetra"></span>
+                                    Приточная система
+                                </label>
+                            </div>
+                            <div class="form__box">
+                                <label class="form__label form__label_check">
+                                    <input class="form__input form__input_check" type="checkbox" name="one" value="true">
+                                    <span class="form__tetra"></span>
+                                    Вытяжная система
+                                </label>
+                            </div>
+                            <div class="form__box">
+                                <label class="form__label form__label_check">
+                                    <input class="form__input form__input_check" type="checkbox" name="one" value="true">
+                                    <span class="form__tetra"></span>
+                                    Охлаждение
+                                </label>
+                            </div>
+                            <div class="form__box">
+                                <label class="form__label form__label_check">
+                                    <input class="form__input form__input_check" type="checkbox" name="one" value="true">
+                                    <span class="form__tetra"></span>
+                                    Рекулерация
+                                </label>
+                            </div>
+                            <div class="form__box">
+                                <label class="form__label form__label_check">
+                                    <input class="form__input form__input_check" type="checkbox" name="one" value="true" disabled>
+                                    <span class="form__tetra"></span>
+                                    Увлажнение
+                                </label>
+                            </div>
+                            <div class="form__box">
+                                <label class="form__label form__label_check">
+                                    <input class="form__input form__input_check" type="checkbox" name="one" value="true" checked disabled>
+                                    <span class="form__tetra"></span>
+                                    Дымоудаление
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <section class="calc__result">
+                    <span class="calc__title">Итого</span>
+                    <span class="calc__sum">0,00 ₽</span>
+                    <p class="calc__note">* Для точного определения стоимости монтажа, проконсультируйтесь с нашим инженером</p>
+                </section>
+                <button class="button button_calc" type="button">Рассчитать</button>
+            </div>
+        </section>
+        <section class="order">
+            <div class="container container_order">
+                <h2 class="title title_h2 title_h2-order">Как <span style="color: blue;">оформить заказ</span>?</h2>
+                <svg class="icon icon_order">
+                    <use xlink:href="img/sprite.svg#order-phone"></use>
+                </svg>
+                <span class="order__text">Оставьте заявку онлайн или по телефону</span>
+                <span class="order__tel">8 918 407-27-44</span>
+                <a href="#" class="link link_blue">Оставить заявку</a>
+                <span class="order__how">Сделать заказ, или получить консультацию очень просто, всего несколько шагов</span>
+                <div class="order__steps">
+                    <span class="order__step">Инженер выезжает на объект и производит расчет параметров бесплатно</span>
+                    <span class="order__step">Занимаемся производством инженерных систем и поставкой оборудования</span>
+                    <span class="order__step">Выполняем монтажные и пуско-наладочные работы</span>
+                </div>
+            </div>
+        </section>
+        <section class="howto">
+            <div class="container container_howto">
+                <h2 class="title title_h2">Ответы на <span style="color: blue;">часто задаваемые вопросы</span></h2>
+                <details class="howto__det">
                 <summary class="howto__sum">Какие этапы работ?</summary>
                 <ul class="howto__list">
                     <li>канальный — 8400 руб./шт.</li>
@@ -315,8 +276,8 @@
                     <li>подъем вентилятора к отметке отметки — 16 800 руб./комплект</li>
                     <li>демонтаж — 50% от цены монтажа</li>
                 </ul>
-            </details>
-            <details class="howto__det">
+                </details>
+                <details class="howto__det">
                 <summary class="howto__sum">Для каких сфер деятельности подходит?</summary>
                 <ul class="howto__list">
                     <li>канальный — 8400 руб./шт.</li>
@@ -326,8 +287,8 @@
                     <li>подъем вентилятора к отметке отметки — 16 800 руб./комплект</li>
                     <li>демонтаж — 50% от цены монтажа</li>
                 </ul>
-            </details>
-            <details class="howto__det">
+                </details>
+                <details class="howto__det">
                 <summary class="howto__sum">Какая стоимость монтажа приточных установок?</summary>
                 <ul class="howto__list">
                     <li>канальный — 8400 руб./шт.</li>
@@ -337,8 +298,8 @@
                     <li>подъем вентилятора к отметке отметки — 16 800 руб./комплект</li>
                     <li>демонтаж — 50% от цены монтажа</li>
                 </ul class="howto__list">
-            </details>
-            <details class="howto__det">
+                </details>
+                <details class="howto__det">
                 <summary class="howto__sum">Какая стоимость установки вентилятора?</summary>
                 <ul class="howto__list">
                     <li>канальный — 8400 руб./шт.</li>
@@ -348,8 +309,8 @@
                     <li>подъем вентилятора к отметке отметки — 16 800 руб./комплект</li>
                     <li>демонтаж — 50% от цены монтажа</li>
                 </ul> class="howto__det"
-            </details>
-            <details class="howto__det">
+                </details>
+                <details class="howto__det">
                 <summary class="howto__sum">Какая стоимость монтажа приточных установок?</summary>
                 <ul class="howto__list">
                     <li>канальный — 8400 руб./шт.</li>
@@ -359,58 +320,57 @@
                     <li>подъем вентилятора к отметке отметки — 16 800 руб./комплект</li>
                     <li>демонтаж — 50% от цены монтажа</li>
                 </ul>
-            </details>
-        </div>
-    </section>
-    @@include('html_components/_form-question.html')
-    <section class="attend">
-        <div class="container container_attend">
-            <h2 class="title title_h2 title_h2-attend">Наши услуги</h2>
-            <a href="#" class="link link_attend">Все наши услуги</a>
-            <ul class="list list_attend">
-                <li class="list__item list__item_attend">
-                    <a href="#" class="attend__title">Geipspan Потолочные системы охлаждения из металла<br><span class="attend__link">Посмотреть</span></a>
-                </li>
-                <li class="list__item list__item_attend">
-                    <a href="#" class="attend__title">Geipspan Потолочные системы охлаждения из металла<br><span class="attend__link">Посмотреть</span></a>
-                </li>
-                <li class="list__item list__item_attend">
-                    <a href="#" class="attend__title">Geipspan Потолочные системы охлаждения из металла<br><span class="attend__link">Посмотреть</span></a>
-                </li>
-                <li class="list__item list__item_attend">
-                    <a href="#" class="attend__title">Geipspan Потолочные системы охлаждения из металла<br><span class="attend__link">Посмотреть</span></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="sertif">
-        <div class="container">
-            <span class="sertif__promo">подверждаем свой профессионализм</span>
-            <h2 class="title title_h2">Наши сертификаты</h2>
-            <div class="sertif__items">
-                <div class="sertif__item">
-                    <img class="sertif__img" src="img/sertif.jpg" alt="">
-                    <h3 class="title title_h3 title_h3-sertif">СРО</h3>
-                    <p class="sertif__text">Сертификат, подверждающий право заключать договоры по осуществелнию и организации работ по строительству, а также реконструкции и капитальному ремонту объектов капитального строительства.</p>
-                </div>
-                <div class="sertif__item">
-                    <img class="sertif__img" src="img/sertif.jpg" alt="">
-                    <h3 class="title title_h3 title_h3-sertif">Международная система сертификации</h3>
-                    <p class="sertif__text">Система сертификации ГОСТ Р Федеральное агенство по техническому регулированию и метрологии</p>
+                </details>
+            </div>
+        </section>
+        @@include('html_components/_form-question.html')
+        <section class="attend">
+            <div class="container container_attend">
+                <h2 class="title title_h2 title_h2-attend">Наши услуги</h2>
+                <a href="#" class="link link_attend">Все наши услуги</a>
+                <ul class="list list_attend">
+                    <li class="list__item list__item_attend">
+                        <a href="#" class="attend__title">Geipspan Потолочные системы охлаждения из металла<br><span class="attend__link">Посмотреть</span></a>
+                    </li>
+                    <li class="list__item list__item_attend">
+                        <a href="#" class="attend__title">Geipspan Потолочные системы охлаждения из металла<br><span class="attend__link">Посмотреть</span></a>
+                    </li>
+                    <li class="list__item list__item_attend">
+                        <a href="#" class="attend__title">Geipspan Потолочные системы охлаждения из металла<br><span class="attend__link">Посмотреть</span></a>
+                    </li>
+                    <li class="list__item list__item_attend">
+                        <a href="#" class="attend__title">Geipspan Потолочные системы охлаждения из металла<br><span class="attend__link">Посмотреть</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sertif">
+            <div class="container">
+                <span class="sertif__promo">подверждаем свой профессионализм</span>
+                <h2 class="title title_h2">Наши сертификаты</h2>
+                <div class="sertif__items">
+                    <div class="sertif__item">
+                        <img class="sertif__img" src="img/sertif.jpg" alt="">
+                        <h3 class="title title_h3 title_h3-sertif">СРО</h3>
+                        <p class="sertif__text">Сертификат, подверждающий право заключать договоры по осуществелнию и организации работ по строительству, а также реконструкции и капитальному ремонту объектов капитального строительства.</p>
+                    </div>
+                    <div class="sertif__item">
+                        <img class="sertif__img" src="img/sertif.jpg" alt="">
+                        <h3 class="title title_h3 title_h3-sertif">Международная система сертификации</h3>
+                        <p class="sertif__text">Система сертификации ГОСТ Р Федеральное агенство по техническому регулированию и метрологии</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="team">
-        <div class="container container_team">
-            <h2 class="title title_h2 title_h2-team">Команда ООО «ИнтроСистема» приглашает к сотрудничеству дизайнеров!</h2>
-            <p class="team__text">Познакомьте ваших клиентов с нашими продуктами или предложите консультацию инженера ООО «ИнтроСистема» в профессии и получайте дополнительные выгоды.</p>
-            <p class="team__text">Позвоните нам, расскажите подробнее!</p>
-            <img class="team__img" src="img/team-360.jpg" alt="">
-        </div>
-    </section>
-</body>
-@@include('html_components/_footer.html')
-<script src="js/script.js"></script>
-
+        </section>
+        <section class="team">
+            <div class="container container_team">
+                <h2 class="title title_h2 title_h2-team">Команда ООО «ИнтроСистема» приглашает к сотрудничеству дизайнеров!</h2>
+                <p class="team__text">Познакомьте ваших клиентов с нашими продуктами или предложите консультацию инженера ООО «ИнтроСистема» в профессии и получайте дополнительные выгоды.</p>
+                <p class="team__text">Позвоните нам, расскажите подробнее!</p>
+                <img class="team__img" src="img/team-360.jpg" alt="">
+            </div>
+        </section>
+    </body>
+    @@include('html_components/_footer.html')
+    <script src="js/script.js"></script>
 </html>

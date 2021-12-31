@@ -124,7 +124,6 @@
 
         &_benefits {
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
             align-items: center;
         }
@@ -188,10 +187,20 @@
             display: flex;
             justify-content: space-between;
         }
+        &_about {
+            justify-content: space-between;
+        }
+
+        &_benefits {
+            justify-content: space-around;
+        }
 
         &__item {
             display: flex;
             align-items: center;
+            &_about {
+                flex-basis: 20%;
+            }
 
             &_intro {
                 align-items: flex-start;

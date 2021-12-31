@@ -27,6 +27,42 @@
         align-items: center;
         column-gap: 16px;
     }
+    &_about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+    &_promo {
+        position: relative;
+    }
+    &_promo::after {
+        content: '';
+        display: block;
+        width: 323px;
+        height: 208px;
+        position: absolute;
+        top: -250px;
+        left: calc(50% + -160px);
+        background-image: url(../img/promo-360.png);
+        background-repeat: no-repeat;
+    }
+    &_intro {
+        position: relative;
+        padding-top: 200px;
+    }
+    &_intro::after {
+        content: '';
+        display: block;
+        width: 255px;
+        height: 178px;
+        position: absolute;
+        top: 0;
+        left: calc(50% + -130px);
+        background-image: url(../img/intro1-360.png);
+        background-repeat: no-repeat;
+    }
 
     &_calc {
         display: flex;
@@ -60,6 +96,17 @@
         &_header {
             grid-template-columns: 1fr 197px min-content min-content 34px;
             column-gap: 32px;
+        }
+        &_about {
+            min-height: inherit;
+        }
+
+        &_promo::after {
+            width: 249px;
+            height: 252px;
+            top: 0;
+            left: calc(100% + -200px);
+            background-image: url(../img/promo-768.png);
         }
 
         &_services {
@@ -108,6 +155,25 @@
             justify-content: end;
         }
 
+        &_promo::after {
+            width: 341px;
+            height: 321px;
+            top: -60px;
+            left: calc(100% + -279px);
+            background-image: url(../img/promo-1024.png);
+        }
+
+        &_intro {
+            padding-left: 360px;
+            padding-top: 50px;
+        }
+        &_intro::after {
+            width: 340px;
+            height: 385px;
+            background-image: url(../img/intro1-1024.png);
+            left: 0;
+        }
+
         &_trand {
             display: flex;
             justify-content: space-between;
@@ -125,8 +191,6 @@
 
         &_howto {
             width: 786px;
-            margin-right: auto;
-            margin-left: 40px;
         }
 
         &_attend {
@@ -140,10 +204,23 @@
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
-
-        &_promo {
-            margin-left: 15px;
-            width: 70%;
+        &_about {
+            width: 1080px;
+        }
+        &_promo::after {
+            width: 450px;
+            height: 347px;
+            top: -60px;
+            left: calc(100% - 450px);
+            background-image: url(../img/promo-1200.png);
+        }
+        &_intro {
+            padding-top: 60px;
+        }
+        &_intro::after {
+            width: 357px;
+            height: 397px;
+            top: 100px;
         }
 
         &_popup {
@@ -156,12 +233,6 @@
 
         &_order {
             width: 970px;
-        }
-
-        &_howto {
-            width: 786px;
-            margin-right: auto;
-            margin-left: 40px;
         }
 
         &_footer {

@@ -106,7 +106,6 @@
 
     &__label {
         display: block;
-        margin-bottom: 20px;
 
         &_check {
             padding-left: 40px;
@@ -142,6 +141,8 @@
 
     &__check-box {
         display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
         column-gap: 10px;
         margin-bottom: 20px;
     }
@@ -191,6 +192,7 @@
             &_check {
                 display: flex;
                 flex-wrap: wrap;
+                gap: 30px;
             }
         }
 

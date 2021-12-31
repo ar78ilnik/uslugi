@@ -33,15 +33,13 @@
         }
     })
 
-    if (window.innerWidth > 1220) {
-        console.log(window.innerWidth);
+    if (window.innerWidth < 1220) {
+        for (let i = 0; i < footerDet.length; i++) {
+            footerDet[i].removeAttribute('open', false);
+        }
+    } else if (window.innerWidth > 1220) {
         for (let i = 0; i < footerDet.length; i++) {
             footerDet[i].setAttribute('open', true);
-        }
-    } else if (window.innerWidth < 1220) {
-        console.log(window.innerWidth);
-        for (let i = 0; i < footerDet.length; i++) {
-            footerDet[i].removeAttribute('open', true);
         }
     }
 })();

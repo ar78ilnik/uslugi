@@ -5,6 +5,7 @@
 
 @media (min-width: 1024px) {
     .trand {
+        display: block;
         &__link {
             display: flex;
             column-gap: 16px;

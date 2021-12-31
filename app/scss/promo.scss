@@ -1,23 +1,13 @@
 /* Promo */
 .promo {
-    border-bottom: 1px solid var(--border);
     font-size: 14px;
     line-height: 24px;
     padding-top: 210px;
-    position: relative;
     width: 100%;
-}
-
-.promo::after {
-    content: '';
-    display: block;
-    width: 323px;
-    height: 208px;
-    position: absolute;
-    top: 0;
-    left: 10%;
-    background-image: url(../img/promo-360.png);
-    background-repeat: no-repeat;
+    &__article {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 2em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -36,32 +26,6 @@
             grid-row: 2/3;
         }
     }
-
-    .promo::after {
-        content: '';
-        display: block;
-        width: 400px;
-        height: 252px;
-        position: absolute;
-        top: 0;
-        left: 70%;
-        background-image: url(../img/promo-768.png);
-        background-repeat: no-repeat;
-    }
-}
-
-@media (min-width: 1024px) {
-    .promo::after {
-        content: '';
-        display: block;
-        width: 498px;
-        height: 321px;
-        position: absolute;
-        top: -110px;
-        left: 70%;
-        background-image: url(../img/promo-1024.png);
-        background-repeat: no-repeat;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -71,17 +35,5 @@
         &__article {
             width: 60%;
         }
-    }
-
-    .promo::after {
-        content: '';
-        display: block;
-        width: 538px;
-        height: 347px;
-        position: absolute;
-        top: -90px;
-        right: -90px;
-        background-image: url(../img/promo-1200.png);
-        background-repeat: no-repeat;
     }
 }
