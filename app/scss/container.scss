@@ -26,8 +26,10 @@
         grid-template-columns: 1fr min-content min-content 34px;
         align-items: center;
         column-gap: 16px;
+        width: 86%;
     }
     &_about {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -43,14 +45,20 @@
         width: 323px;
         height: 208px;
         position: absolute;
-        top: -250px;
+        top: -240px;
         left: calc(50% + -160px);
         background-image: url(../img/promo-360.png);
         background-repeat: no-repeat;
     }
+    &_features {
+        padding-top: 23px;
+    }
+    &_services {
+        margin-bottom: 60px;
+    }
     &_intro {
         position: relative;
-        padding-top: 200px;
+        padding-top: 270px;
     }
     &_intro::after {
         content: '';
@@ -58,7 +66,7 @@
         width: 255px;
         height: 178px;
         position: absolute;
-        top: 0;
+        top: 80px;
         left: calc(50% + -130px);
         background-image: url(../img/intro1-360.png);
         background-repeat: no-repeat;
@@ -69,20 +77,40 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        padding-top: 40px;
         margin-bottom: 50px;
     }
 
     &_order {
-        display: grid;
-        grid-row-gap: 30px;
-        justify-items: center;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 62px;
+    }
+
+    &_howto {
+        padding-top: 32px;
+        padding-bottom: 60px;
+    }
+    &_attend {
+        padding-top: 60px;
+    }
+    &_sertif {
+        padding-top: 60px;
     }
 
     &_question {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 30px;
         padding-bottom: 40px;
+    }
+    &_team {
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
 
     &_footer {
@@ -95,28 +123,63 @@
 @media (min-width: 768px) {
     .container {
         &_header {
+            width: 95%;
             grid-template-columns: 1fr 197px min-content min-content 34px;
             column-gap: 32px;
         }
-        &_about {
-            min-height: inherit;
+        &_crumbs {
+            width: 95%;
         }
-
+        &_intro {
+            padding-top: 380px;
+            width: 95%;
+        }
+        &_intro::after {
+            width: 378px;
+            height: 263px;
+            background-image: url(../img/intro1-768.png);
+            top: 60px;
+            left: calc(50% + -189px);
+        }
+        &_benefits {
+            width: 95%;
+            padding-top: 87px;
+        }
+        &_spend {
+            padding-top: 120px;
+        }
+        &_about {
+            padding: 30px 40px;
+            min-height: inherit;
+            gap: 15px;
+        }
+        &_promo {
+            width: 95%;
+        }
         &_promo::after {
             width: 249px;
             height: 252px;
-            top: 0;
-            left: calc(100% + -200px);
+            top: -40px;
+            left: calc(100% + -230px);
             background-image: url(../img/promo-768.png);
         }
-
+        &_features {
+            width: 95%;
+            margin-bottom: 60px;
+        }
         &_services {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            gap: 20px;
         }
-
+        &_question {
+            padding-top: 33px;
+            padding-bottom: 38px;
+        }
         &_calc {
+            width: 95%;
+            padding-top: 37px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(4, min-content);
@@ -129,19 +192,30 @@
 
         &_order {
             padding-top: 60px;
+            padding-bottom: 60px;
             display: grid;
             grid-template-columns: 250px 1fr 1fr 1fr 1fr;
             grid-template-rows: repeat(6, min-content);
             justify-items: start;
+            grid-row-gap: 20px;
+        }
+        &_attend {
+            width: 95%;
+        }
+        &_sertif {
+            width: 95%;
         }
 
         &_team {
+            width: 95%;
             display: grid;
             grid-template-columns: 1fr 320px;
             grid-template-rows: repeat(3, min-content);
+            grid-column-gap: 50px;
         }
 
         &_footer {
+            width: 95%;
             padding-top: 40px;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr;
@@ -152,18 +226,28 @@
 @media (min-width: 1024px) {
     .container {
         &_header {
+            width: 93%;
             grid-template-columns: min-content 197px 1fr min-content min-content;
             justify-content: end;
         }
-
+        &_crumbs {
+            width: 92%;
+        }
+        &_promo {
+            width: 92%;
+        }
         &_promo::after {
             width: 341px;
             height: 321px;
-            top: -60px;
-            left: calc(100% + -279px);
+            top: -40px;
+            left: calc(100% + -300px);
             background-image: url(../img/promo-1024.png);
         }
-
+        &_features {
+            width: 92%;
+            padding-top: 20px;
+            margin-bottom: 40px;
+        }
         &_intro {
             padding-left: 360px;
             padding-top: 50px;
@@ -176,14 +260,20 @@
         }
 
         &_trand {
+            width: 92%;
             display: flex;
             justify-content: space-between;
+            padding-bottom: 20px;
+        }
+        &_spend {
+            padding-top: 110px;
         }
 
         &_calc {
             background-image: url(../img/calc-1024.png);
             background-size: 235px 205px;
             background-position: 100% 100%;
+            padding-top: 70px;
         }
 
         &_order {
@@ -191,7 +281,8 @@
         }
 
         &_howto {
-            width: 786px;
+            width: 95%;
+            padding-top: 82px;
         }
 
         &_attend {
@@ -199,29 +290,55 @@
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: min-content 1fr;
         }
+        &_team {
+            width: 95%;
+            grid-template-columns: 1fr 448px;
+            grid-template-rows: repeat(3, min-content);
+            grid-column-gap: 50px;
+        }
+        &_footer {
+            width: 92%;
+            padding-top: 70px;
+        }
     }
 }
 
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+        &_header {
+            grid-template-columns: min-content 197px 1fr repeat(2, min-content);
+        }
+        &_trand {
+            padding: 0;
+        }
         &_about {
-            width: 1080px;
+            width: 1172px;
+            padding: 0;
+            padding-bottom: 60px;
         }
         &_promo::after {
             width: 450px;
             height: 347px;
-            top: -60px;
-            left: calc(100% - 450px);
+            top: -53px;
+            left: calc(100% - 435px);
             background-image: url(../img/promo-1200.png);
         }
+        &_spend {
+            padding-top: 117px;
+        }
+        &_features {
+            margin-bottom: 80px;
+        }
         &_intro {
-            padding-top: 60px;
+            padding-top: 80px;
         }
         &_intro::after {
             width: 357px;
             height: 397px;
             top: 100px;
+            background-image: url(../img/intro1-1200.png);
+            left: -15px;
         }
 
         &_popup {
@@ -236,9 +353,16 @@
             width: 970px;
         }
 
+        &_sertif {
+            margin-bottom: 80px;
+        }
+
+        &_team {
+            grid-template-columns: 1fr 474px;
+        }
+
         &_footer {
-            padding: 50px;
-            grid-template-columns: 1fr 1fr 1.5fr;
+            grid-template-columns: 1fr 1fr 2fr;
         }
     }
 }

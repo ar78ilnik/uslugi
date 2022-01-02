@@ -47,12 +47,18 @@
 
 @media (min-width: 1024px) {
 	.sertif {
+		&__promo {
+			line-height: 20px;
+		}
 		&__items {
 			flex-direction: row;
 			justify-content: space-between;
 		}
 		&__item {
 			width: 47%;
+		}
+		&__text {
+			line-height: 24px;
 		}
 	}
 }

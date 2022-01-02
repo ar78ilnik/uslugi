@@ -2,6 +2,7 @@
 .team {
 	&__text {
 		font-size: 14px;
+		line-height: 24px;
 		margin-bottom: 15px;
 	}
 }
@@ -18,7 +19,7 @@
 		}
 		&__img {
 			grid-column: 2/3;
-            grid-row: 1/2;
+            grid-row: 1/3;
 		}
 	}
 }

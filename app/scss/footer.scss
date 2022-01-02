@@ -8,10 +8,11 @@
         font-family: 'Montserrat-Bold', sans-serif;
         font-size: 24px;
         line-height: 32px;
+        letter-spacing: 2px;
         color: var(--white);
         text-decoration: none;
         margin-bottom: 26px;
-        padding-left: 38px;
+        padding-left: 50px;
         position: relative;
     }
 
@@ -29,7 +30,7 @@
     &__adress {
         display: inline-block;
         position: relative;
-        padding-left: 38px;
+        padding-left: 50px;
     }
 
     &__adress::after {
@@ -47,7 +48,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     &__sum {
@@ -68,5 +69,52 @@
 
     &__det[open] .icon_sum {
         transform: rotate(180deg);
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        &__tel {
+            font-size: 20px;
+            padding-left: 45px;
+            letter-spacing: 1px;
+            margin-bottom: 33px;
+        }
+        &__adress {
+            padding-left: 45px;
+            letter-spacing: 1.2px;
+            font-size: 12px;
+        }
+        &__adress::after {
+            top: -9px;
+            left: 2px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        &__tel {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 24px;
+        }
+        &__adress {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        &__tel {
+            font-size: 16px;
+            line-height: 32px;
+        }
+        &__adress {
+            font-size: 12px;
+            line-height: 24px;
+        }
     }
 }

@@ -3,13 +3,11 @@
     height: 60px;
     background-color: var(--header);
 
-    &__logo {
-        font-family: 'Montserrat-Regular', sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-    }
-
     &__img {
+        font-family: 'Roboto-Bold', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        font-size: 20px;
         color: var(--white);
         text-decoration: none;
     }
@@ -38,6 +36,9 @@
 
 @media (min-width: 768px) {
     .header {
+        &__img {
+            letter-spacing: -0.5px;
+        }
         &__search {
             display: block;
         }
@@ -48,6 +49,25 @@
             border: 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             color: var(--input-text);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        height: 80px;
+        margin-bottom: 20px;
+        &__img {
+            letter-spacing: 2px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        margin-bottom: 0;
+        &__img {
+            letter-spacing: -0.4px;
         }
     }
 }

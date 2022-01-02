@@ -2,19 +2,36 @@
 .crumbs {
     font-size: 12px;
     line-height: 16px;
-
+    padding-top: 40px;
+    margin-bottom: 60px;
+    &__item {
+        letter-spacing: 0.6px;
+    }
     &_about {
         padding: 0;
         align-self: flex-start;
+        margin-bottom: 0;
     }
 }
 
 @media (min-width: 768px) {
     .crumbs {
+        padding-top: 0;
         margin-bottom: 24px;
 
         &_about {
             margin: 0;
         }
+    }
+}
+
+@media (min-width: 1024px) {
+    .crumbs {
+    }
+}
+
+@media (min-width: 1200px) {
+    .crumbs {
+        padding-top: 10px;
     }
 }

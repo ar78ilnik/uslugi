@@ -4,6 +4,7 @@
 
     &__title {
         text-align: center;
+        line-height: 32px;
     }
 
     &__form {
@@ -17,6 +18,9 @@
         display: block;
         font-weight: 700;
         font-size: 48px;
+        line-height: 48px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     &__note {
         font-size: 12px;
@@ -37,6 +41,23 @@
         &__result {
             grid-column: 3/4;
             grid-row: 2/3;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .calc {
+        &__title {
+            font-size: 24px;
+            line-height: 48px;
+        }
+        &__sum {
+            font-size: 48px;
+            line-height: 64px;
+        }
+        &__note {
+            font-size: 14px;
+            line-height: 24px;
         }
     }
 }

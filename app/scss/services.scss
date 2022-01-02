@@ -9,6 +9,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        gap: 20px;
     }
 
     &__card:nth-child(1) {
@@ -20,19 +21,19 @@
     &__card:nth-child(2) {
         background-image: url(../img/services1.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
         background-repeat: no-repeat;
-        background-position: 100% 95%;
+        background-position: 95% 95%;
     }
 
     &__card:nth-child(3) {
         background-image: url(../img/services1.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
         background-repeat: no-repeat;
-        background-position: 100% 95%;
+        background-position: 95% 95%;
     }
 
     &__card:nth-child(4) {
         background-image: url(../img/services4@1x-mobile.png), linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
         background-repeat: no-repeat;
-        background-position: 100% 120%;
+        background-position: 100% 100%;
     }
 
     &__text {
@@ -46,8 +47,12 @@
 @media (min-width: 768px) {
     .services {
         &__card {
-            flex-basis: 50%;
-            margin-bottom: 20px;
+            flex-basis: 48%;
+            margin: 0;
+        }
+        &__text {
+            max-height: 90px;
+            overflow: hidden;
         }
     }
 }
@@ -56,6 +61,12 @@
     .services {
         &__card {
             min-height: 316px;
+            padding: 32px;
+        }
+        &__text {
+            max-height: 140px;
+            font-size: 16px;
+            line-height: 24px;
         }
     }
 }

@@ -10,6 +10,7 @@
     &__item {
         margin-bottom: 24px;
         position: relative;
+        letter-spacing: 0.8px;
     }
 
     &__item::after {
@@ -34,7 +35,8 @@
         }
 
         &__item {
-            flex-basis: 40%;
+            letter-spacing: 0.5px;
+            flex-basis: 47%;
             margin-bottom: 0;
         }
     }
@@ -43,7 +45,8 @@
 @media (min-width: 1024px) {
     .features {
         &__item {
-            flex-basis: 18%;
+            flex-basis: 20%;
+            font-size: 14px;
         }
     }
 }

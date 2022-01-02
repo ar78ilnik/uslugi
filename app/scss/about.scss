@@ -13,9 +13,17 @@
     align-items: center;
 }
 
+@media (min-width: 768px) {
+    .about {
+        display: block;
+        padding: 0;
+    }
+}
+
 @media (min-width: 1024px) {
     .about {
-        padding: 60px;
+        min-height: 482px;
+        padding: 0;
     }
 }
 

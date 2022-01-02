@@ -6,13 +6,45 @@
         font-size: 20px;
         line-height: 32px;
         font-weight: 700;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
+        border-top: 1px solid var(--border);
+        padding-top: 40px;
+        letter-spacing: 1.1px;
     }
 
     &__text {
         font-size: 14px;
         line-height: 20px;
         color: var(--install-text);
-        margin-bottom: 50px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .intro {
+        &__header {
+            padding-top: 24px;
+            margin-bottom: 25px;
+        }
+        &__text {
+            padding-bottom: 22px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro {
+        &__header {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro {
+        &__header {
+            padding-top: 35px;
+        }
     }
 }

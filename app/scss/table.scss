@@ -59,3 +59,13 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .table {
+        &__thead th {
+            width: 20%;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

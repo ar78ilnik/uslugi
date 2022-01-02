@@ -4,9 +4,40 @@
     }
 
     &_h2 {
-        font-size: 28px;
-        line-height: 48px;
-        margin-bottom: 30px;
+        font-family: 'Montserrat-Bold', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        letter-spacing: 1.6px;
+        font-weight: 700;
+        &-calc {
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 46px;
+            margin-bottom: 15px;
+        }
+        &-order {
+            justify-self: start;
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: 2px;
+        }
+        &-howto {
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 1px;
+            width: 70%;
+        }
+        &-attend {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &-sertif {
+            padding-top: 24px;
+        }
+        &-team {
+            line-height: 30px;
+        }
     }
 
     &_h2-table,
@@ -14,29 +45,35 @@
         margin: 0;
     }
 
-    &_h2-calc {
-        font-size: 38px;
-        font-weight: 700;
-        line-height: 46px;
-        margin-bottom: 15px;
-    }
-
-    &_h2-order {
-        justify-self: start;
-    }
-
     &_h3 {
         font-size: 16px;
         line-height: 24px;
+        &-serv {
+            width: 70%;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
     }
 
     &_h3-sertif {
         display: none;
     }
+    &_form {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        width: 70%;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
 
     &_about {
         text-align: center;
         font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 2px;
     }
 
     &_footer {
@@ -52,6 +89,10 @@
         font-weight: 300;
         font-size: 12px;
         color: var(--text-light);
+        &_spend {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 }
 
@@ -61,37 +102,124 @@
             display: block;
             font-size: 28px;
             line-height: 36px;
+            letter-spacing: 2px;
             grid-column: 1/2;
             grid-row: 1/2;
         }
-
-        &_h2-order {
-            grid-column: 1/2;
-            grid-row: 1/2;
+        &_h2 {
+            &-benefits {
+                text-align: center;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 1.5px;
+                font-weight: 700;
+            }
+            &-order {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                margin-bottom: 0;
+            }
+            &-team {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            &-spend {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 1px;
+                margin-bottom: 0;
+            }
+            &-calc {
+                font-size: 28px;
+                line-height: 36px;
+            }
+            &-sertif {
+                font-size: 24px;
+                line-height: 36px;
+            }
         }
-
-        &_h2-team {
-            grid-column: 1/2;
-            grid-row: 1/2;
+        &__text {
+            letter-spacing: 2px;
+        }
+        &__text_spend {
+            letter-spacing: 0.7px;
         }
 
         &_h3-sertif {
             display: inline;
+            width: 70%;
             grid-column: 2/3;
             grid-row: 1/2;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 1.4px;
+        }
+        &_form {
+            letter-spacing: 1.2px;
+            margin: 0;
+        }
+        &_footer {
+            margin-bottom: 43px;
         }
     }
 }
 
 @media (min-width: 1024px) {
     .title {
+        &_h1 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 48px;
+        }
+        &_h2 {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 10px;
+            &-benefits {
+                margin-bottom: 47px;
+                letter-spacing: 1.5px;
+            }
+            &-attend {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            &-spend {
+                margin-bottom: 0;
+            }
+            &-calc {
+                font-size: 36px;
+                line-height: 48px;
+                letter-spacing: 2px;
+                margin-bottom: 0;
+            }
+            &-order {
+                font-size: 36px;
+                line-height: 48px;
+            }
+            &-howto {
+                width: 40%;
+                margin-bottom: 40px;
+            }
+            &-attend {
+                margin-bottom: 40px;
+            }
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 1px;
+        }
         &_about {
             font-size: 36px;
+            line-height: 48px;
         }
-
-        &_h2-attend {
-            grid-column: 1/2;
-            grid-row: 1/2;
+        &_h3 {
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.7px;
+        }
+        &_footer {
+            margin-bottom: 38px;
         }
     }
 }

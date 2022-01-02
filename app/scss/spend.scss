@@ -5,3 +5,11 @@
         margin-bottom: 30px;
     }
 }
+
+@media (min-width: 1200px) {
+    .spend {
+        &__title {
+            margin-bottom: 75px;
+        }
+    }
+}

@@ -1,15 +1,7 @@
 /* Attend */
 .attend {
 	&__title {
-		display: block;
-		height: inherit;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 24px;
-		color: var(--white);
-		text-decoration: none;
-		padding-top: 95px;
-		padding-left: 20px;
+		display: none;
 	}
 	&__link {
 		font-weight: 600;
@@ -20,6 +12,17 @@
 	.attend {
 		&__title {
 			padding-top: 160px;
+		}
+		&__title {
+			display: block;
+			height: inherit;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 24px;
+			color: var(--white);
+			text-decoration: none;
+			padding-top: 175px;
+			padding-left: 20px;
 		}
 	}
 }
