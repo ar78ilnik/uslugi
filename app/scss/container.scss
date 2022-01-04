@@ -28,13 +28,23 @@
         column-gap: 16px;
         width: 86%;
     }
+    &_crumbs {
+        padding-top: 57px;
+    }
+    &_benefits {
+        padding-top: 70px;
+    }
+    &_spend {
+        padding-top: 66px;
+    }
     &_about {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
+        padding-top: 8px;
     }
     &_promo {
         position: relative;
@@ -66,7 +76,7 @@
         width: 255px;
         height: 178px;
         position: absolute;
-        top: 80px;
+        top: 53px;
         left: calc(50% + -130px);
         background-image: url(../img/intro1-360.png);
         background-repeat: no-repeat;
@@ -165,12 +175,13 @@
         }
         &_features {
             width: 95%;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         &_services {
+            width: 732px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             gap: 20px;
         }
         &_question {
@@ -231,6 +242,7 @@
             justify-content: end;
         }
         &_crumbs {
+            padding-top: 40px;
             width: 92%;
         }
         &_promo {
@@ -245,8 +257,11 @@
         }
         &_features {
             width: 92%;
-            padding-top: 20px;
+            padding-top: 24px;
             margin-bottom: 40px;
+        }
+        &_services {
+            width: 944px;
         }
         &_intro {
             padding-left: 360px;

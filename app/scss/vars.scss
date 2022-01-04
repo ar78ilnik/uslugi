@@ -23,6 +23,12 @@ fieldset {
     border: 0;
 }
 
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+}
+
 /* Colors */
 :root {
     --white: #ffffff;

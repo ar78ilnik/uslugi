@@ -3,6 +3,11 @@
         display: none;
     }
 
+    &_h2-table,
+    &_h2-calc {
+        margin: 0;
+    }
+
     &_h2 {
         font-family: 'Montserrat-Bold', sans-serif;
         font-size: 20px;
@@ -10,11 +15,24 @@
         margin-bottom: 24px;
         letter-spacing: 1.6px;
         font-weight: 700;
+        &-benefits {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 30px;
+        }
+        &-spend {
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
         &-calc {
-            font-size: 38px;
+            font-size: 28px;
             font-weight: 700;
-            line-height: 46px;
+            line-height: 36px;
             margin-bottom: 15px;
+            width: 70%;
+            margin: 0 auto;
         }
         &-order {
             justify-self: start;
@@ -38,11 +56,6 @@
         &-team {
             line-height: 30px;
         }
-    }
-
-    &_h2-table,
-    &_h2-calc {
-        margin: 0;
     }
 
     &_h3 {

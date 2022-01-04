@@ -9,6 +9,8 @@
         padding-bottom: 1.7em;
     }
     &__text {
+        font-size: 14px;
+        line-height: 24px;
         letter-spacing: 1px;
     }
 }
@@ -21,14 +23,26 @@
             width: 65%;
             display: flex;
             flex-direction: column;
-            gap: 44px;
+            gap: 20px;
         }
         &__text {
             letter-spacing: 1px;
             align-self: end;
             grid-column: 1/2;
             grid-row: 2/3;
-                        font-size: 16px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .promo {
+        &__article {
+            gap: 41px;
+        }
+        &__text {
+            font-size: 16px;
             line-height: 32px;
         }
     }
@@ -41,6 +55,7 @@
         &__article {
             width: 60%;
             letter-spacing: 2.7px;
+            gap: 40px;
         }
     }
 }

@@ -35,6 +35,7 @@
         font-size: 14px;
         font-weight: 500;
         background-color: var(--white);
+        color: var(--form-input);
         border: 0;
         margin-right: 15px;
     }
@@ -75,6 +76,20 @@
         border-radius: 5px;
         background-color: var(--white);
     }
+
+    /* Form Question*/
+    &__check {
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid var(--border);
+    }
+
+    &__check:checked {
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.5101 0.545536C11.3936 0.445947 11.2586 0.370285 11.1129 0.32287C10.9671 0.275455 10.8135 0.257216 10.6607 0.269195C10.5078 0.281174 10.3589 0.323136 10.2223 0.392685C10.0857 0.462234 9.96419 0.558008 9.86462 0.674536L4.83962 6.55329L2.13587 4.29579C1.9187 4.11459 1.6385 4.02698 1.3568 4.0522C1.07509 4.07742 0.814905 4.2134 0.633372 4.43029C0.543689 4.53762 0.476037 4.66157 0.434283 4.79506C0.392528 4.92855 0.37749 5.06896 0.390027 5.20826C0.402565 5.34757 0.442432 5.48303 0.507351 5.60692C0.572269 5.73081 0.660966 5.84069 0.768372 5.93029L4.39137 8.95529C4.50317 9.04848 4.63296 9.11765 4.77267 9.15847C4.91237 9.19929 5.05899 9.21088 5.20337 9.19254C5.35641 9.18076 5.50562 9.13888 5.64244 9.06929C5.77925 8.9997 5.90097 8.90378 6.00062 8.78704L11.6391 2.19029C11.8402 1.955 11.9395 1.64949 11.9153 1.34095C11.8911 1.03241 11.7454 0.746113 11.5101 0.545036' fill='grey'/%3E%3C/svg%3E");
+        background-size: 15px 15px;
+    }
+    /* End Form Question*/
 
     /* Checked */
     &__input_check:checked + &__tetra {
@@ -134,6 +149,7 @@
         font-weight: 500;
         background-color: var(--white);
         border: 0;
+        color: var(--form-input);
     }
 
     &__box {
