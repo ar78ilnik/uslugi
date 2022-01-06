@@ -3,7 +3,8 @@
 	&__promo {
 		font-weight: 700;
 		font-size: 12px;
-		letter-spacing: 0.04;
+		line-height: 20px;
+		letter-spacing: 2.7px;
 		color: var(--blue);
 	}
 	&__items {
@@ -15,6 +16,8 @@
 	}
 	&__text {
 		display: none;
+		font-size: 16px;
+		line-height: 24px;
 	}
 }
 

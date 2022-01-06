@@ -92,12 +92,13 @@
     }
 
     &_order {
-        width: 95%;
+        width: 87%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         padding-top: 62px;
+        padding-bottom: 60px;
     }
 
     &_howto {
@@ -108,7 +109,7 @@
         padding-top: 60px;
     }
     &_sertif {
-        padding-top: 60px;
+        padding-top: 70px;
     }
 
     &_question {
@@ -298,6 +299,17 @@
         &_howto {
             width: 95%;
             padding-top: 82px;
+            position: relative;
+        }
+        &_howto::before {
+            content: '';
+            display: block;
+            width: 172px;
+            height: 538px;
+            position: absolute;
+            top: 273px;
+            right: -8px;
+            background-image: url(../img/questionBg-1024.png);
         }
 
         &_attend {
@@ -362,6 +374,7 @@
 
         &_calc {
             width: 1019px;
+            padding-top: 90px;
         }
 
         &_order {
@@ -373,7 +386,7 @@
         }
 
         &_team {
-            grid-template-columns: 1fr 474px;
+            grid-template-columns: repeat(4, 1fr);
         }
 
         &_footer {

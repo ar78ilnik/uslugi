@@ -18,7 +18,7 @@
         -webkit-overflow-scrolling: touch;
         overflow-x: auto;
         gap: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 60px;
     }
 
     &_sum li {
@@ -70,15 +70,15 @@
             border-radius: 10px;
             flex: 0 0 auto;
             font-weight: 700;
-            font-size: 16px;
+            font-size: 13px;
             line-height: 24px;
             position: relative;
         }
         &_attend:after {
             content: '';
             position: absolute;
-            bottom: -13px;
-            left: 10px;
+            bottom: -27px;
+            left: 0;
             display: block;
             width: 30px;
             height: 4px;
@@ -93,11 +93,11 @@
             content: 'Монтаж вентиляции';
             display: block;
             min-height: 50px;
-            vertical-align: super;
             position: absolute;
-            bottom: -50px;
+            bottom: -63px;
             left: 0;
-            padding-left: 50px;
+            padding-left: 37px;
+            letter-spacing: 1px;
         }
 
         &_attend:nth-child(2) {
@@ -107,11 +107,11 @@
             content: 'Монтаж водяных потолочных панелей';
             display: block;
             min-height: 50px;
-            vertical-align: super;
             position: absolute;
-            bottom: -50px;
+            bottom: -63px;
             left: 0;
-            padding-left: 50px;
+            padding-left: 37px;
+            letter-spacing: 1px;
         }
 
         &_attend:nth-child(3) {
@@ -121,11 +121,11 @@
             content: 'Монтаж котельной';
             display: block;
             min-height: 50px;
-            vertical-align: super;
             position: absolute;
-            bottom: -50px;
+            bottom: -63px;
             left: 0;
-            padding-left: 50px;
+            padding-left: 37px;
+            letter-spacing: 1px;
         }
 
         &_attend:nth-child(4) {
@@ -135,11 +135,11 @@
             content: 'Монтаж систем отопления';
             display: block;
             min-height: 50px;
-            vertical-align: super;
             position: absolute;
-            bottom: -50px;
+            bottom: -63px;
             left: 0;
-            padding-left: 50px;
+            padding-left: 37px;
+            letter-spacing: 1px;
         }
     }
 

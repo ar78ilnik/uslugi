@@ -26,7 +26,7 @@
         border: 0;
         margin-bottom: 30px;
         &-about {
-            padding: 14px 85px;
+            padding: 14px 70px;
         }
         &-form {
             -webkit-border-radius: 0;
@@ -37,6 +37,10 @@
         }
         &-services {
             margin: 0;
+        }
+        &-order {
+            align-self: stretch;
+            text-align: center;
         }
     }
 

@@ -30,12 +30,12 @@
     }
 
     &__list {
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
     &__list li {
-        line-height: 24px;
-        margin-bottom: 12px;
+        line-height: 25px;
+        margin-bottom: 15px;
         list-style: inside;
     }
 
@@ -52,7 +52,24 @@
 @media (min-width: 768px) {
     .howto {
         &__det {
-            width: 80%;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .howto {
+        &__det {
+            width: 83%;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .howto {
+        &__det {
+            width: 70%;
         }
     }
 }

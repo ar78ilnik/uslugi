@@ -49,12 +49,26 @@
         &-attend {
             font-size: 20px;
             line-height: 30px;
+            position: relative;
+        }
+        &-attend::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: -18px;
+            display: block;
+            width: 79px;
+            height: 83px;
+            background-image: url(../img/attendBg-360.png);
         }
         &-sertif {
-            padding-top: 24px;
+            padding-top: 25px;
+            font-size: 24px;
+            line-height: 36px;
         }
         &-team {
             line-height: 30px;
+            margin-bottom: 30px;
         }
     }
 
@@ -142,6 +156,12 @@
                 letter-spacing: 1px;
                 margin-bottom: 0;
             }
+            &-attend {
+                padding-left: 30px;
+            }
+            &-attend::before {
+                left: 0;
+            }
             &-calc {
                 font-size: 28px;
                 line-height: 36px;
@@ -195,6 +215,13 @@
             &-attend {
                 grid-column: 1/2;
                 grid-row: 1/2;
+                margin-bottom: 50px;
+            }
+            &-attend::before {
+                width: 123px;
+                height: 119px;
+                background-image: url(../img/attendBg-1024.png);
+                top: -50px;
             }
             &-spend {
                 margin-bottom: 0;
@@ -233,6 +260,24 @@
         }
         &_footer {
             margin-bottom: 38px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .title {
+        &_h2 {
+            &-team {
+                grid-column: 1/3;
+                grid-row: 1/2;
+            }
+            &-attend::before {
+                width: 179px;
+                height: 254px;
+                background-image: url(../img/attendBg-1200.png);
+                z-index: -1;
+                left: -20px;
+            }
         }
     }
 }
