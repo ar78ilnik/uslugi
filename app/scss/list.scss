@@ -57,7 +57,7 @@
             margin-bottom: 25px;
             display: flex;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
             column-gap: 10px;
         }
 
@@ -272,6 +272,7 @@
 
             &_benefits {
                 justify-content: flex-start;
+                align-items: flex-start;
                 width: 24%;
             }
 
