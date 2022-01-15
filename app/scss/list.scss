@@ -40,7 +40,6 @@
             flex-direction: column;
             align-items: center;
             gap: 10px;
-            letter-spacing: 1.5px;
         }
 
         &_intro {
@@ -97,7 +96,6 @@
             bottom: -63px;
             left: 0;
             padding-left: 37px;
-            letter-spacing: 1px;
         }
 
         &_attend:nth-child(2) {
@@ -111,7 +109,6 @@
             bottom: -63px;
             left: 0;
             padding-left: 37px;
-            letter-spacing: 1px;
         }
 
         &_attend:nth-child(3) {
@@ -125,7 +122,6 @@
             bottom: -63px;
             left: 0;
             padding-left: 37px;
-            letter-spacing: 1px;
         }
 
         &_attend:nth-child(4) {
@@ -139,7 +135,6 @@
             bottom: -63px;
             left: 0;
             padding-left: 37px;
-            letter-spacing: 1px;
         }
     }
 
@@ -156,7 +151,6 @@
         color: var(--black);
         font-style: normal;
         position: relative;
-        letter-spacing: 1px;
     }
 
     &__title::after {

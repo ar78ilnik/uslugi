@@ -10,7 +10,6 @@
     &__item {
         margin-bottom: 24px;
         position: relative;
-        letter-spacing: 0.8px;
     }
 
     &__item::after {
@@ -35,7 +34,6 @@
         }
 
         &__item {
-            letter-spacing: 0.5px;
             flex-basis: 47%;
             margin-bottom: 0;
         }

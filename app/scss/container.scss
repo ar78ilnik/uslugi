@@ -41,7 +41,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         gap: 15px;
         padding-top: 8px;
@@ -99,6 +99,27 @@
         align-items: center;
         padding-top: 62px;
         padding-bottom: 60px;
+        position: relative;
+    }
+    &_order::before {
+        content: '';
+        display: block;
+        width: 75px;
+        height: 236px;
+        position: absolute;
+        top: -176px;
+        left: -22px;
+        background-image: url(../img/orderBg-360.png);
+    }
+    &_order::after {
+        content: '';
+        display: block;
+        width: 75px;
+        height: 236px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: url(../img/orderBg-360.png);
     }
 
     &_howto {
@@ -122,6 +143,17 @@
     &_team {
         padding-top: 60px;
         padding-bottom: 30px;
+        position: relative;
+    }
+    &_team::before {
+        content: '';
+        display: block;
+        width: 186px;
+        height: 27px;
+        position: absolute;
+        top: 180px;
+        left: 0;
+        background-image: url(../img/teamBg2-768.png);
     }
 
     &_footer {
@@ -188,6 +220,17 @@
         &_question {
             padding-top: 33px;
             padding-bottom: 38px;
+            position: relative;
+        }
+        &_question::after {
+            content: '';
+            display: block;
+            width: 83px;
+            height: 101px;
+            position: absolute;
+            top: 0;
+            right: -40px;
+            background-image: url(../img/questionBg-768.png);
         }
         &_calc {
             width: 95%;
@@ -211,6 +254,26 @@
             justify-items: start;
             grid-row-gap: 20px;
         }
+        &_order::before {
+            content: '';
+            display: block;
+            width: 72px;
+            height: 236px;
+            position: absolute;
+            top: -176px;
+            left: -22px;
+            background-image: url(../img/orderBg-768.png);
+        }
+        &_order::after {
+            content: '';
+            display: block;
+            width: 78px;
+            height: 101px;
+            position: absolute;
+            bottom: 30px;
+            right: -50px;
+            background-image: url(../img/orderBg2-768.png);
+        }
         &_attend {
             width: 95%;
         }
@@ -224,6 +287,28 @@
             grid-template-columns: 1fr 320px;
             grid-template-rows: repeat(3, min-content);
             grid-column-gap: 50px;
+            position: relative;
+        }
+        &_team::before {
+            content: '';
+            display: block;
+            width: 186px;
+            height: 27px;
+            position: absolute;
+            top: 125px;
+            left: 0;
+            background-image: url(../img/teamBg2-768.png);
+        }
+        &_team::after {
+            content: '';
+            display: block;
+            width: 72px;
+            height: 70px;
+            position: absolute;
+            top: 220px;
+            left: 370px;
+            background-image: url(../img/teamBg-768.png);
+            z-index: -1;
         }
 
         &_footer {
@@ -295,6 +380,26 @@
         &_order {
             grid-row-gap: 15px;
         }
+        &_order::before {
+            content: '';
+            display: block;
+            width: 69px;
+            height: 236px;
+            position: absolute;
+            top: -170px;
+            left: -60px;
+            background-image: url(../img/orderBg1-1024.png);
+        }
+        &_order::after {
+            content: '';
+            display: block;
+            width: 129px;
+            height: 101px;
+            position: absolute;
+            top: 0;
+            right: -66px;
+            background-image: url(../img/orderBg2-1024.png);
+        }
 
         &_howto {
             width: 95%;
@@ -307,9 +412,9 @@
             width: 172px;
             height: 538px;
             position: absolute;
-            top: 273px;
-            right: -8px;
-            background-image: url(../img/questionBg-1024.png);
+            top: 227px;
+            right: -25px;
+            background-image: url(../img/howto-1024.png);
         }
 
         &_attend {
@@ -323,6 +428,28 @@
             grid-template-rows: repeat(3, min-content);
             grid-column-gap: 50px;
         }
+        &_team::before {
+            content: '';
+            display: block;
+            width: 186px;
+            height: 27px;
+            position: absolute;
+            top: 149px;
+            left: -20px;
+            background-image: url(../img/teamBg2-768.png);
+        }
+        &_team::after {
+            content: '';
+            display: block;
+            width: 72px;
+            height: 70px;
+            position: absolute;
+            top: 220px;
+            left: 930px;
+            background-image: url(../img/teamBg-1024.png);
+            z-index: -1;
+        }
+
         &_footer {
             width: 92%;
             padding-top: 70px;
@@ -341,8 +468,7 @@
         }
         &_about {
             width: 1172px;
-            padding: 0;
-            padding-bottom: 60px;
+            padding: 60px 0 60px;
         }
         &_promo::after {
             width: 450px;
@@ -367,6 +493,26 @@
             background-image: url(../img/intro1-1200.png);
             left: -15px;
         }
+        &_question::before {
+            content: '';
+            display: block;
+            width: 129px;
+            height: 101px;
+            position: absolute;
+            top: 50px;
+            left: -40px;
+            background-image: url(../img/questionBg1-1200.png);
+        }
+        &_question::after {
+            content: '';
+            display: block;
+            width: 83px;
+            height: 101px;
+            position: absolute;
+            top: 0;
+            right: -40px;
+            background-image: url(../img/questionBg2-1200.png);
+        }
 
         &_popup {
             display: none;
@@ -380,6 +526,26 @@
         &_order {
             width: 970px;
         }
+        &_order::before {
+            content: '';
+            display: block;
+            width: 78px;
+            height: 236px;
+            position: absolute;
+            top: 40px;
+            left: -110px;
+            background-image: url(../img/orderBg1-1200.png);
+        }
+        &_order::after {
+            content: '';
+            display: block;
+            width: 129px;
+            height: 101px;
+            position: absolute;
+            top: 0;
+            right: -100px;
+            background-image: url(../img/orderBg2-1200.png);
+        }
 
         &_sertif {
             margin-bottom: 80px;
@@ -387,6 +553,17 @@
 
         &_team {
             grid-template-columns: repeat(4, 1fr);
+        }
+        &_team::after {
+            content: '';
+            display: block;
+            width: 72px;
+            height: 70px;
+            position: absolute;
+            top: 305px;
+            left: 1050px;
+            background-image: url(../img/teamBg-1024.png);
+            z-index: -1;
         }
 
         &_footer {

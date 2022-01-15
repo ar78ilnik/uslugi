@@ -13,7 +13,6 @@
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 24px;
-        letter-spacing: 1.6px;
         font-weight: 700;
         &-benefits {
             font-size: 24px;
@@ -23,7 +22,6 @@
         &-spend {
             font-size: 24px;
             line-height: 32px;
-            letter-spacing: 1px;
             margin-bottom: 10px;
         }
         &-calc {
@@ -38,12 +36,10 @@
             justify-self: start;
             font-size: 36px;
             line-height: 48px;
-            letter-spacing: 2px;
         }
         &-howto {
             font-size: 24px;
             line-height: 36px;
-            letter-spacing: 1px;
             width: 70%;
         }
         &-attend {
@@ -77,9 +73,7 @@
         line-height: 24px;
         &-serv {
             width: 70%;
-            letter-spacing: 1.5px;
             font-weight: 600;
-            letter-spacing: 1px;
         }
     }
 
@@ -92,7 +86,6 @@
         line-height: 48px;
         width: 70%;
         text-align: center;
-        letter-spacing: 1px;
         margin-bottom: 10px;
     }
 
@@ -100,7 +93,6 @@
         text-align: center;
         font-size: 28px;
         line-height: 40px;
-        letter-spacing: 2px;
     }
 
     &_footer {
@@ -129,7 +121,6 @@
             display: block;
             font-size: 28px;
             line-height: 36px;
-            letter-spacing: 2px;
             grid-column: 1/2;
             grid-row: 1/2;
         }
@@ -138,7 +129,6 @@
                 text-align: center;
                 font-size: 24px;
                 line-height: 32px;
-                letter-spacing: 1.5px;
                 font-weight: 700;
             }
             &-order {
@@ -153,7 +143,6 @@
             &-spend {
                 font-size: 24px;
                 line-height: 32px;
-                letter-spacing: 1px;
                 margin-bottom: 0;
             }
             &-attend {
@@ -172,12 +161,6 @@
                 margin-bottom: 40px;
             }
         }
-        &__text {
-            letter-spacing: 2px;
-        }
-        &__text_spend {
-            letter-spacing: 0.7px;
-        }
 
         &_h3-sertif {
             display: inline;
@@ -186,10 +169,8 @@
             grid-row: 1/2;
             font-size: 24px;
             line-height: 32px;
-            letter-spacing: 1.4px;
         }
         &_form {
-            letter-spacing: 1.2px;
             margin: 0;
         }
         &_footer {
@@ -211,7 +192,6 @@
             margin-bottom: 10px;
             &-benefits {
                 margin-bottom: 47px;
-                letter-spacing: 1.5px;
             }
             &-attend {
                 grid-column: 1/2;
@@ -230,7 +210,6 @@
             &-calc {
                 font-size: 36px;
                 line-height: 48px;
-                letter-spacing: 2px;
                 margin-bottom: 0;
             }
             &-order {
@@ -251,7 +230,6 @@
         &__text {
             font-size: 16px;
             line-height: 24px;
-            letter-spacing: 1px;
         }
         &_about {
             font-size: 36px;
@@ -260,7 +238,6 @@
         &_h3 {
             font-size: 24px;
             line-height: 32px;
-            letter-spacing: 0.7px;
         }
         &_footer {
             margin-bottom: 38px;
