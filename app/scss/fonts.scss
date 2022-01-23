@@ -14,6 +14,13 @@
 }
 
 @font-face: {
+	font-family: 'MuseoSansCyrl500', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	src: url('../fonts/MuseoSansCyrl500.woff2') format('woff2');
+}
+
+@font-face: {
 	font-family: 'Montserrat-Bold', sans-serif;
 	font-weight: 700;
 	font-style: normal;

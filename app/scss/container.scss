@@ -21,6 +21,13 @@
         padding: 32px 24px 24px;
     }
 
+    &_bid {
+        width: 320px;
+        display: grid;
+        grid-template-columns: 1fr 72px;
+        grid-template-rows: 72px 1fr;
+    }
+
     &_header {
         display: grid;
         grid-template-columns: 1fr min-content min-content 34px;

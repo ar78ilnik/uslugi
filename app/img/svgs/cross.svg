@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="21" viwBox="0 0 34 21">
-    <line x1="0" y1="0" x2="34" y2="34" stroke="white"/>
-    <line x1="0" y1="34" x2="34" y2="0" stroke="white"/>
+    <line x1="0" y1="0" x2="34" y2="34"/>
+    <line x1="0" y1="34" x2="34" y2="0"/>
 </svg>

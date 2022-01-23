@@ -63,6 +63,37 @@
             overflow: hidden;
             clip: rect(0 0 0 0);
         }
+        &_name,
+        &_tel {
+            width: 100%;
+            border: 1px solid var(--popup);
+            line-height: 2rem;
+        }
+        &_tel {
+            display: block;
+            border-left: 0;
+        }
+        &_tel-pais {
+            flex-shrink: 0;
+            border: 0;
+        }
+    }
+    &__tel-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__det {
+        height: 100%;
+        border: 1px solid var(--popup);
+        border-right: 0;
+    }
+
+    &__sum {
+        height: inherit;
+        display: flex;
+        align-items: center;
     }
 
     &__tetra {

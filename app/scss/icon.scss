@@ -7,6 +7,21 @@
         height: 20px;
     }
 
+    &_bid {
+        width: 34px;
+        height: 34px;
+        stroke: var(--popup);
+        stroke-width: 2px;
+    }
+    &_bid:hover {
+        color: var(--popup-hover);
+    }
+
+    &_pais {
+        width: 20px;
+        height: 15px;
+    }
+
     &_menu {
         width: 34px;
         height: 34px;
@@ -30,8 +45,14 @@
     }
 
     &_sum {
+        stroke: var(--popup);
         width: 16px;
         height: 11px;
+    }
+    &_bid-adres {
+        display: block;
+        width: 24px;
+        height: 24px;
     }
 }
 
