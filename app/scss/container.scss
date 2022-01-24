@@ -21,13 +21,6 @@
         padding: 32px 24px 24px;
     }
 
-    &_bid {
-        width: 320px;
-        display: grid;
-        grid-template-columns: 1fr 72px;
-        grid-template-rows: 72px 1fr;
-    }
-
     &_header {
         display: grid;
         grid-template-columns: 1fr min-content min-content 34px;
@@ -35,15 +28,19 @@
         column-gap: 16px;
         width: 86%;
     }
+
     &_crumbs {
         padding-top: 57px;
     }
+
     &_benefits {
         padding-top: 70px;
     }
+
     &_spend {
         padding-top: 66px;
     }
+
     &_about {
         width: 100%;
         display: flex;
@@ -53,9 +50,11 @@
         gap: 15px;
         padding-top: 8px;
     }
+
     &_promo {
         position: relative;
     }
+
     &_promo::after {
         content: '';
         display: block;
@@ -67,16 +66,20 @@
         background-image: url(../img/promo-360.png);
         background-repeat: no-repeat;
     }
+
     &_features {
         padding-top: 23px;
     }
+
     &_services {
         margin-bottom: 60px;
     }
+
     &_intro {
         position: relative;
         padding-top: 270px;
     }
+
     &_intro::after {
         content: '';
         display: block;
@@ -108,6 +111,7 @@
         padding-bottom: 60px;
         position: relative;
     }
+
     &_order::before {
         content: '';
         display: block;
@@ -118,6 +122,7 @@
         left: -22px;
         background-image: url(../img/orderBg-360.png);
     }
+
     &_order::after {
         content: '';
         display: block;
@@ -133,9 +138,11 @@
         padding-top: 32px;
         padding-bottom: 60px;
     }
+
     &_attend {
         padding-top: 60px;
     }
+
     &_sertif {
         padding-top: 70px;
     }
@@ -147,11 +154,13 @@
         padding-top: 30px;
         padding-bottom: 40px;
     }
+
     &_team {
         padding-top: 60px;
         padding-bottom: 30px;
         position: relative;
     }
+
     &_team::before {
         content: '';
         display: block;
@@ -177,13 +186,16 @@
             grid-template-columns: 1fr 197px min-content min-content 34px;
             column-gap: 32px;
         }
+
         &_crumbs {
             width: 95%;
         }
+
         &_intro {
             padding-top: 380px;
             width: 95%;
         }
+
         &_intro::after {
             width: 378px;
             height: 263px;
@@ -191,21 +203,26 @@
             top: 60px;
             left: calc(50% + -189px);
         }
+
         &_benefits {
             width: 95%;
             padding-top: 87px;
         }
+
         &_spend {
             padding-top: 120px;
         }
+
         &_about {
             padding: 30px 40px;
             min-height: inherit;
             gap: 15px;
         }
+
         &_promo {
             width: 95%;
         }
+
         &_promo::after {
             width: 249px;
             height: 252px;
@@ -213,10 +230,12 @@
             left: calc(100% + -230px);
             background-image: url(../img/promo-768.png);
         }
+
         &_features {
             width: 95%;
             margin-bottom: 40px;
         }
+
         &_services {
             width: 732px;
             display: flex;
@@ -224,11 +243,13 @@
             justify-content: space-between;
             gap: 20px;
         }
+
         &_question {
             padding-top: 33px;
             padding-bottom: 38px;
             position: relative;
         }
+
         &_question::after {
             content: '';
             display: block;
@@ -239,6 +260,7 @@
             right: -40px;
             background-image: url(../img/questionBg-768.png);
         }
+
         &_calc {
             width: 95%;
             padding-top: 37px;
@@ -261,6 +283,7 @@
             justify-items: start;
             grid-row-gap: 20px;
         }
+
         &_order::before {
             content: '';
             display: block;
@@ -271,6 +294,7 @@
             left: -22px;
             background-image: url(../img/orderBg-768.png);
         }
+
         &_order::after {
             content: '';
             display: block;
@@ -281,9 +305,11 @@
             right: -50px;
             background-image: url(../img/orderBg2-768.png);
         }
+
         &_attend {
             width: 95%;
         }
+
         &_sertif {
             width: 95%;
         }
@@ -296,6 +322,7 @@
             grid-column-gap: 50px;
             position: relative;
         }
+
         &_team::before {
             content: '';
             display: block;
@@ -306,6 +333,7 @@
             left: 0;
             background-image: url(../img/teamBg2-768.png);
         }
+
         &_team::after {
             content: '';
             display: block;
@@ -334,13 +362,16 @@
             grid-template-columns: min-content 197px 1fr min-content min-content;
             justify-content: end;
         }
+
         &_crumbs {
             padding-top: 40px;
             width: 92%;
         }
+
         &_promo {
             width: 92%;
         }
+
         &_promo::after {
             width: 341px;
             height: 321px;
@@ -348,18 +379,22 @@
             left: calc(100% + -300px);
             background-image: url(../img/promo-1024.png);
         }
+
         &_features {
             width: 92%;
             padding-top: 24px;
             margin-bottom: 40px;
         }
+
         &_services {
             width: 944px;
         }
+
         &_intro {
             padding-left: 360px;
             padding-top: 50px;
         }
+
         &_intro::after {
             width: 340px;
             height: 385px;
@@ -373,6 +408,7 @@
             justify-content: space-between;
             padding-bottom: 20px;
         }
+
         &_spend {
             padding-top: 110px;
         }
@@ -387,6 +423,7 @@
         &_order {
             grid-row-gap: 15px;
         }
+
         &_order::before {
             content: '';
             display: block;
@@ -397,6 +434,7 @@
             left: -60px;
             background-image: url(../img/orderBg1-1024.png);
         }
+
         &_order::after {
             content: '';
             display: block;
@@ -413,6 +451,7 @@
             padding-top: 82px;
             position: relative;
         }
+
         &_howto::before {
             content: '';
             display: block;
@@ -429,12 +468,14 @@
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: min-content 1fr;
         }
+
         &_team {
             width: 95%;
             grid-template-columns: 1fr 448px;
             grid-template-rows: repeat(3, min-content);
             grid-column-gap: 50px;
         }
+
         &_team::before {
             content: '';
             display: block;
@@ -445,6 +486,7 @@
             left: -20px;
             background-image: url(../img/teamBg2-768.png);
         }
+
         &_team::after {
             content: '';
             display: block;
@@ -467,16 +509,20 @@
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+
         &_header {
             grid-template-columns: min-content 197px 1fr repeat(2, min-content);
         }
+
         &_trand {
             padding: 0;
         }
+
         &_about {
             width: 1172px;
             padding: 60px 0 60px;
         }
+
         &_promo::after {
             width: 450px;
             height: 347px;
@@ -484,15 +530,19 @@
             left: calc(100% - 435px);
             background-image: url(../img/promo-1200.png);
         }
+
         &_spend {
             padding-top: 117px;
         }
+
         &_features {
             margin-bottom: 80px;
         }
+
         &_intro {
             padding-top: 80px;
         }
+
         &_intro::after {
             width: 357px;
             height: 397px;
@@ -500,6 +550,7 @@
             background-image: url(../img/intro1-1200.png);
             left: -15px;
         }
+
         &_question::before {
             content: '';
             display: block;
@@ -510,6 +561,7 @@
             left: -40px;
             background-image: url(../img/questionBg1-1200.png);
         }
+
         &_question::after {
             content: '';
             display: block;
@@ -533,6 +585,7 @@
         &_order {
             width: 970px;
         }
+
         &_order::before {
             content: '';
             display: block;
@@ -543,6 +596,7 @@
             left: -110px;
             background-image: url(../img/orderBg1-1200.png);
         }
+
         &_order::after {
             content: '';
             display: block;
@@ -561,6 +615,7 @@
         &_team {
             grid-template-columns: repeat(4, 1fr);
         }
+
         &_team::after {
             content: '';
             display: block;
