@@ -23,6 +23,11 @@
 		grid-column: 3/4;
 		grid-row: 3/4;
 	}
+	&_bid {
+		width: 100%;
+		border: 1px solid var(--submit-bg);
+		line-height: 3rem;
+	}
 }
 
 @media (min-width: 1024px) {

@@ -1,60 +1,60 @@
 <div class="bid">
-    <div class="bid__wrapper">
-        <h2 class="title title_h2-bid">Получить консультацию</h2>
-        <button class="bid__close" type="button">
-            <svg class="icon icon_bid" aria-hidden="true">
-                <use class="menu__icon_bid" xlink:href="img/sprite.svg#cross-bid"></use>
-            </svg>
-        </button>
-        <main class="main main_bid">
-            <div class="bid__adres">
-                <span class="bid__adres-text">Сочи Гагарина 63</span>
-            </div>
-            <div class="bid__times">
-                <span class="bid__time">ПН 09:00 - 18:00</span>
-                <span class="bid__time">ВТ 09:00 - 18:00</span>
-                <span class="bid__time">СР 09:00 - 18:00</span>
-                <span class="bid__time">ЧТ 09:00 - 18:00</span>
-                <span class="bid__time">ПТ 09:00 - 18:00</span>
-            </div>
-            <div class="bid__tel">
-                <a class="bid__tel-number" href="tel:89184072744">89184072744</a>
-            </div>
-            <div class="bid__form">
-                <form action="script.php" class="form form_bid">
-                    <fieldset class="bid__fieldset">
-                        <legend class="bid__legend">Заказать звонок</legend>
-                        <span class="bid__action">Оставьте свой телефон, мы обязательно вам перезвоним</span>
-                        <input type="text" class="form__input form__input_name" placeholder="Имя" name="Имя">
-                        <div class="form__tel-wrapper">
-                            <div class="form__tel-pais">
-                                <details class="form__det">
-                                    <summary class="form__summary">
-                                        <svg class="icon icon_sum">
-                                            <use xlink:href="img/sprite.svg#arrow"></use>
-                                        </svg>
-                                        <svg class="icon icon_pais">
-                                            <use xlink:href="img/sprite.svg#russian"></use>
-                                        </svg>
-                                        <span class="form__code">+7</span>
-                                    </summary>
-                                </details>
-                            </div>
-                            <input type="text" class="form__input form__input_tel" name="tel" placeholder="___ ___-__-__" autocomplete="off">
-                        </div>
-                        <textarea class="bid__textarea" name="message" id="bid-textarea" placeholder="Сообщение" readonly></textarea>
-                        <p class="form__bid-check">
-                            <input class="form__check_bid" id="check-bid" type="checkbox">
-                            <label for="check-bid" class="form__label form__label_bid">Я даю согласие на обработку моих персональных данных</label>
-                        </p>
-                        <div class="form__code">
-                            <div class="form__code-numbers"></div>
-                            <input type="text" class="form__input form__input_code" placeholder="Введите код">
-                        </div>
-                    </fieldset>
-                    <button class="button_bid" type="submit">Отправить сообщение</button>
-                </form>
-            </div>
-        </main>
-    </div>
+	<div class="bid__wrapper">
+		<h2 class="title title_h2-bid">Получить консультацию</h2>
+		<button class="bid__close" type="button">
+		<svg class="icon icon_bid" aria-hidden="true">
+			<use class="menu__icon_bid" xlink:href="img/sprite.svg#cross-bid"></use>
+		</svg>
+		</button>
+		<main class="main main_bid">
+			<div class="bid__adres">
+				<span class="bid__adres-text">Сочи Гагарина 63</span>
+			</div>
+			<div class="bid__times">
+				<span class="bid__time">ПН 09:00 - 18:00</span>
+				<span class="bid__time">ВТ 09:00 - 18:00</span>
+				<span class="bid__time">СР 09:00 - 18:00</span>
+				<span class="bid__time">ЧТ 09:00 - 18:00</span>
+				<span class="bid__time">ПТ 09:00 - 18:00</span>
+			</div>
+			<div class="bid__tel">
+				<a class="bid__tel-number" href="tel:89184072744">89184072744</a>
+			</div>
+			<div class="bid__form">
+				<form action="script.php" class="form form_bid">
+					<fieldset class="bid__fieldset">
+						<legend class="bid__legend">Заказать звонок</legend>
+						<span class="bid__action">Оставьте свой телефон, мы обязательно вам перезвоним</span>
+						<input type="text" class="form__input form__input_name" placeholder="Имя" name="Имя">
+						<div class="form__tel-wrapper">
+							<div class="form__tel-pais">
+								<details class="form__det">
+								<summary class="form__summary">
+								<svg class="icon icon_sum">
+									<use xlink:href="img/sprite.svg#arrow"></use>
+								</svg>
+								<svg class="icon icon_pais">
+									<use xlink:href="img/sprite.svg#russian"></use>
+								</svg>
+								<span class="form__code">+7</span>
+								</summary>
+								</details>
+							</div>
+							<input type="text" class="form__input form__input_tel" name="tel" placeholder="___ ___-__-__" autocomplete="off">
+						</div>
+						<textarea class="bid__textarea" name="message" id="bid-textarea" placeholder="Сообщение" readonly></textarea>
+						<p class="form__bid-check">
+							<input class="form__check_bid" id="check-bid" type="checkbox">
+							<label for="check-bid" class="form__label form__label_bid">Я даю согласие на обработку моих персональных данных</label>
+						</p>
+						<div class="form__code">
+							<div class="form__code-numbers"></div>
+							<input type="text" class="form__captcha" placeholder="Введите код">
+						</div>
+					</fieldset>
+					<button class="button_bid" type="submit">Отправить сообщение</button>
+				</form>
+			</div>
+		</main>
+	</div>
 </div>

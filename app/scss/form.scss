@@ -82,6 +82,18 @@
         }
     }
 
+    &__captcha {
+            width: 60%;
+            height: 36px;
+            border: 1px solid var(--check-bid);
+        }
+
+    &__code {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__tel-wrapper {
         width: 100%;
         display: flex;
@@ -109,17 +121,6 @@
         box-shadow: 0 0 0 2px var(--text);
         border-radius: 5px;
         background-color: var(--white);
-    }
-
-    &__bid-check {
-        display: flex;
-        flex-direction: row;
-    }
-
-    &__check_bid {
-        width: 18px;
-        height: 18px;
-        background-color: var(--check-bid);
     }
 
     /* Form Question*/
@@ -217,6 +218,29 @@
         align-items: flex-start;
         column-gap: 10px;
         margin-bottom: 34px;
+    }
+
+    &__check_bid {
+        display: block;
+        width: 32px;
+        height: 18px;
+        background-color: var(--check-bid);
+    }
+
+    &__check_bid:checked {
+        background-color: var(--check-bid-hover);
+    }
+
+    &__bid-check {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__code-numbers {
+        width: 30%;
+        height: 36px;
+        background-color: var(--check-bid);
     }
 
     &__blue {
