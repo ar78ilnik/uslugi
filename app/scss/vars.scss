@@ -23,6 +23,10 @@ fieldset {
     border: 0;
 }
 
+summary {
+    display: block;
+}
+
 input,
 textarea,
 select {
@@ -51,4 +55,5 @@ select {
     --check-bid: #cfdfe2;
     --check-bid-hover: #8188c2;
     --submit-bg: #e3ecef;
+    --captcha: #8ea6ab;
 }

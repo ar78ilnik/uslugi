@@ -25,7 +25,8 @@
         document.body.style.overflow = '';
     })
 
-    linkBlueAbout.addEventListener('click', () => {
+    linkBlueAbout.addEventListener('click', (event) => {
+        event.preventDefault();
         bidBlock.classList.toggle('bid_open');
     })
 

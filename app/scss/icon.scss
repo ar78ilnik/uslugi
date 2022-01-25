@@ -13,6 +13,7 @@
         stroke: var(--popup);
         stroke-width: 2px;
     }
+
     &_bid:hover {
         color: var(--popup-hover);
     }
@@ -49,6 +50,12 @@
         width: 16px;
         height: 11px;
     }
+
+    .bid__det[open] &_bid {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
     &_bid-adres {
         display: block;
         width: 24px;
@@ -86,6 +93,7 @@
             width: 30px;
             height: 30px;
         }
+
         &_sum {
             display: none;
         }

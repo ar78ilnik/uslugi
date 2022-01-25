@@ -7,6 +7,8 @@
         display: grid;
         grid-template-columns: 1fr 72px;
         grid-template-rows: 72px 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     &__close {
@@ -32,6 +34,33 @@
         line-height: 3rem;
     }
 
+    &__sum {
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__sum-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        gap: 38px;
+    }
+
+    &__item-times {
+        line-height: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__day {
+        flex-basis: 30%;
+        text-align: end;
+    }
+
+    &__hours {
+        flex-basis: 65%;
+    }
+
     &__time {
         display: block;
         line-height: 1.5rem;
@@ -53,6 +82,9 @@
         height: 84px;
         width: 100%;
         border: 1px solid var(--popup);
+        resize: none;
+        font-size: 1rem;
+        padding-left: 20px;
     }
 }
 

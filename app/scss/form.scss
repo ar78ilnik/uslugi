@@ -71,9 +71,14 @@
             line-height: 2rem;
         }
 
+        &_name {
+            padding-left: 20px;
+        }
+
         &_tel {
             display: block;
             border-left: 0;
+            padding-left: 10px;
         }
 
         &_tel-pais {
@@ -83,10 +88,12 @@
     }
 
     &__captcha {
-            width: 60%;
-            height: 36px;
-            border: 1px solid var(--check-bid);
-        }
+        width: 60%;
+        height: 36px;
+        border: 1px solid var(--check-bid);
+        color: var(--captcha);
+
+    }
 
     &__code {
         width: 100%;
@@ -100,6 +107,10 @@
         flex-direction: row;
     }
 
+    &__tel-pais {
+        width: 40%;
+    }
+
     &__det {
         height: 100%;
         border: 1px solid var(--popup);
@@ -110,6 +121,13 @@
         height: inherit;
         display: flex;
         align-items: center;
+    }
+
+    &__summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 34px;
     }
 
     &__tetra {

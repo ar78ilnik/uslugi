@@ -1,39 +1,44 @@
 /* Button */
 .button {
-	&_burger {
-		font-size: 0;
-		line-height: 0;
-		background-color: transparent;
-		border: 0;
-		width: 34px;
-		height: 21px;
-	}
-	&_calc {
-		display: inline-block;
-		font-size: 12px;
-		line-height: 12px;
-		font-family: 'Montserrat-Bold', sans-serif;
-		font-weight: 700;
-		color: var(--white);
-		padding: 14px 24px;
-		background-color: var(--blue);
-		border-radius: 5px;
-		border: 0;
-		align-self: stretch;
-		grid-column: 3/4;
-		grid-row: 3/4;
-	}
-	&_bid {
-		width: 100%;
-		border: 1px solid var(--submit-bg);
-		line-height: 3rem;
-	}
+    &_burger {
+        font-size: 0;
+        line-height: 0;
+        background-color: transparent;
+        border: 0;
+        width: 34px;
+        height: 21px;
+    }
+
+    &_calc {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 12px;
+        font-family: 'Montserrat-Bold', sans-serif;
+        font-weight: 700;
+        color: var(--white);
+        padding: 14px 24px;
+        background-color: var(--blue);
+        border-radius: 5px;
+        border: 0;
+        align-self: stretch;
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    &_bid {
+        width: 100%;
+        border: 0;
+        line-height: 3rem;
+        background: linear-gradient(to bottom left, #8dcb4c, #069055);
+        color: var(--white);
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 1024px) {
-	.button {
-		&_calc {
-			justify-self: start;
-		}
-	}
+    .button {
+        &_calc {
+            justify-self: start;
+        }
+    }
 }
