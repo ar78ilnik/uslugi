@@ -29,6 +29,18 @@
         margin-bottom: 0;
     }
 
+    &_country {
+        display: none;
+        &-open {
+            display: block;
+            position: absolute;
+            top: -70px;
+            left: 0;
+            max-height: 200px;
+            width: 100%;
+        }
+    }
+
     &__item {
         &_footer {
             margin-bottom: 32px;

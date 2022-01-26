@@ -7,7 +7,9 @@
         footerDet = document.querySelectorAll('.footer__det'),
         linkBlueAbout = document.querySelector('.link_blue-about'),
         bidBlock = document.querySelector('.bid'),
-        bidClose = document.querySelector('.bid__close');
+        bidClose = document.querySelector('.bid__close'),
+        iconCountry = document.querySelector('.icon_country-check'),
+        listCountry = document.querySelector('.list_country');
 
     menuButton.addEventListener('click', () => {
         let expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
@@ -23,6 +25,11 @@
         popup.classList.toggle('container_popup-open');
         bodyBack.classList.toggle('body__back_opened');
         document.body.style.overflow = '';
+    })
+
+    iconCountry.addEventListener('click', () => {
+        listCountry.classList.toggle('list_country-open');
+        iconCountry.classList.toggle('icon_country-check-open');
     })
 
     linkBlueAbout.addEventListener('click', (event) => {

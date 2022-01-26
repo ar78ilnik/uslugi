@@ -37,13 +37,15 @@
     &__sum {
         margin-bottom: 8px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        gap: 30px;
     }
 
     &__sum-wrapper {
+        flex-basis: 80%;
         display: flex;
         justify-content: flex-end;
-        gap: 38px;
+        align-items: flex-end;
     }
 
     &__item-times {
@@ -55,10 +57,16 @@
     &__day {
         flex-basis: 30%;
         text-align: end;
+        &_sum {
+            flex-basis: 31%;
+        }
     }
 
     &__hours {
-        flex-basis: 65%;
+        flex-basis: 61%;
+        &_sum {
+            text-align: right;
+        }
     }
 
     &__time {
@@ -83,7 +91,7 @@
         width: 100%;
         border: 1px solid var(--popup);
         resize: none;
-        font-size: 1rem;
+        font-size: .9rem;
         padding-left: 20px;
     }
 }

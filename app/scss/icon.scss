@@ -51,8 +51,13 @@
         height: 11px;
     }
 
-    .bid__det[open] &_bid {
-        -webkit-transform: rotate(180deg);
+    &_country-check {
+        width: 16px;
+        height: 12px;
+        stroke: var(--check-bid);
+    }
+
+    &_country-check-open {
         transform: rotate(180deg);
     }
 
