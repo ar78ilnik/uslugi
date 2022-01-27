@@ -8,6 +8,7 @@
         linkBlueAbout = document.querySelector('.link_blue-about'),
         bidBlock = document.querySelector('.bid'),
         bidClose = document.querySelector('.bid__close'),
+        telWrapper = document.querySelector('.form__tel-wrapper'),
         iconCountry = document.querySelector('.icon_country-check'),
         listCountry = document.querySelector('.list_country');
 
@@ -27,7 +28,7 @@
         document.body.style.overflow = '';
     })
 
-    iconCountry.addEventListener('click', () => {
+    telWrapper.addEventListener('click', () => {
         listCountry.classList.toggle('list_country-open');
         iconCountry.classList.toggle('icon_country-check-open');
     })

@@ -69,10 +69,12 @@
             width: 100%;
             border: 1px solid var(--popup);
             line-height: 2rem;
+            border-radius: 5px;
         }
 
         &_name {
             padding-left: 20px;
+            width: 100%;
         }
 
         &_tel {
@@ -80,6 +82,7 @@
             width: 60%;
             border-left: 0;
             padding-left: 10px;
+            color: var(--check-bid);
         }
 
         &_tel-pais {
@@ -88,11 +91,17 @@
         }
     }
 
+    &__name-country {
+        line-height: 2rem;
+        margin-left: 15px;
+    }
+
     &__captcha {
         width: 60%;
         height: 36px;
         border: 1px solid var(--check-bid);
         color: var(--captcha);
+        border-radius: 5px;
 
     }
 
@@ -146,6 +155,11 @@
         box-shadow: 0 0 0 2px var(--text);
         border-radius: 5px;
         background-color: var(--white);
+    }
+
+    &__country {
+        color: var(--popup);
+        margin-left: 5px;
     }
 
     /* Form Question*/
@@ -271,6 +285,7 @@
         width: 30%;
         height: 36px;
         background-color: var(--check-bid);
+        border-radius: 5px;
     }
 
     &__blue {
@@ -354,8 +369,13 @@
                 width: 40%;
                 color: var(--form-input);
             }
+
             &_tel {
-                width: 60%;
+                width: 70%;
+            }
+
+            &_name {
+                width: 100%;
             }
         }
 

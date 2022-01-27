@@ -14,13 +14,35 @@
         stroke-width: 2px;
     }
 
+    &_days {
+        width: 16px;
+        height: 16px;
+        stroke: var(--popup);
+        stroke-width: 2px;
+    }
+
     &_bid:hover {
         color: var(--popup-hover);
     }
 
-    &_pais {
-        width: 20px;
-        height: 15px;
+    &_ru,
+    &_ua,
+    &_by {
+        width: 24px;
+        height: 24px;
+        margin-left: 15px;
+    }
+
+    &_ru {
+        background-image: url(../img/ru.png);
+    }
+
+    &_ua {
+        background-image: url(../img/ua.png);
+    }
+
+    &_by {
+        background-image: url(../img/by.png);
     }
 
     &_menu {

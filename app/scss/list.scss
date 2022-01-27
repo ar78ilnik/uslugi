@@ -31,13 +31,15 @@
 
     &_country {
         display: none;
+
         &-open {
             display: block;
             position: absolute;
             top: -70px;
             left: 0;
             max-height: 200px;
-            width: 100%;
+            width: 280px;
+            background-color: var(--white);
         }
     }
 
@@ -85,6 +87,7 @@
             line-height: 24px;
             position: relative;
         }
+
         &_attend:after {
             content: '';
             position: absolute;
@@ -100,6 +103,7 @@
         &_attend:nth-child(1) {
             background-image: url(../img/attend1.jpg);
         }
+
         &_attend:nth-child(1):before {
             content: 'Монтаж вентиляции';
             display: block;
@@ -111,8 +115,9 @@
         }
 
         &_attend:nth-child(2) {
-            background-image:  url(../img/attend2.jpg);
+            background-image: url(../img/attend2.jpg);
         }
+
         &_attend:nth-child(2):before {
             content: 'Монтаж водяных потолочных панелей';
             display: block;
@@ -126,6 +131,7 @@
         &_attend:nth-child(3) {
             background-image: url(../img/attend3.jpg);
         }
+
         &_attend:nth-child(3):before {
             content: 'Монтаж котельной';
             display: block;
@@ -139,6 +145,7 @@
         &_attend:nth-child(4) {
             background-image: url(../img/attend4.jpg);
         }
+
         &_attend:nth-child(4):before {
             content: 'Монтаж систем отопления';
             display: block;
@@ -208,6 +215,7 @@
         &__title::after {
             left: -30px;
         }
+
         &_footer {
             padding-left: 20px;
         }
@@ -220,6 +228,7 @@
             font-size: 18px;
             line-height: 32px;
         }
+
         &_attend {
             overflow: visible;
             flex-wrap: wrap;
@@ -257,6 +266,7 @@
             display: flex;
             justify-content: space-between;
         }
+
         &_about {
             justify-content: space-between;
         }
@@ -268,6 +278,7 @@
         &__item {
             display: flex;
             align-items: center;
+
             &_about {
                 flex-basis: 20%;
             }
@@ -286,30 +297,38 @@
                 width: 23%;
                 height: 273px;
             }
+
             &_attend:nth-child(1) {
-                background-image:  linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(../img/attend1.jpg);
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(../img/attend1.jpg);
             }
+
             &_attend:nth-child(2) {
-                background-image:  linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(../img/attend2.jpg);
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(../img/attend2.jpg);
             }
+
             &_attend:nth-child(3) {
-                background-image:  linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(../img/attend3.jpg);
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(../img/attend3.jpg);
             }
+
             &_attend:nth-child(4) {
-                background-image:  linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(../img/attend4.jpg);
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(../img/attend4.jpg);
             }
+
             &_attend:nth-child(1)::before,
             &_attend:nth-child(1)::after {
                 display: none;
             }
+
             &_attend:nth-child(2)::before,
             &_attend:nth-child(2)::after {
                 display: none;
             }
+
             &_attend:nth-child(3)::before,
             &_attend:nth-child(3)::after {
                 display: none;
             }
+
             &_attend:nth-child(4)::before,
             &_attend:nth-child(4)::after {
                 display: none;

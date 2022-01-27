@@ -20,6 +20,20 @@
             grid-column: 1/2;
             grid-row: 1/2;
             align-self: center;
+            padding-left: 50px;
+            position: relative;
+        }
+
+        &-bid::before {
+            display: block;
+            content: '';
+            width: 23px;
+            height: 23px;
+            position: absolute;
+            top: -3px;
+            left: 20px;
+            background-image: url(../img/bid-1.png);
+            background-size: 23px 23px;
         }
 
         &-benefits {
