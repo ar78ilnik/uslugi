@@ -25,24 +25,29 @@
         color: var(--popup-hover);
     }
 
-    &_ru,
-    &_ua,
-    &_by {
+    &-country {
+        background-image: url(../img/7.png);
         width: 24px;
         height: 24px;
         margin-left: 15px;
-    }
-
-    &_ru {
-        background-image: url(../img/ru.png);
-    }
-
-    &_ua {
-        background-image: url(../img/ua.png);
-    }
-
-    &_by {
-        background-image: url(../img/by.png);
+        &_ua {
+            background-image: url(../img/380.png);
+            width: 24px;
+            height: 24px;
+            margin-left: 15px;
+        }
+        &_by {
+            background-image: url(../img/375.png);
+            width: 24px;
+            height: 24px;
+            margin-left: 15px;
+        }
+        &_ru {
+            background-image: url(../img/7.png);
+            width: 24px;
+            height: 24px;
+            margin-left: 15px;
+        }
     }
 
     &_menu {

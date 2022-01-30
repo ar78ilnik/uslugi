@@ -79,7 +79,6 @@
 
         &_tel {
             display: block;
-            width: 60%;
             border-left: 0;
             padding-left: 10px;
             color: var(--check-bid);
@@ -119,7 +118,7 @@
 
     &__tel-pais {
         display: flex;
-        width: 30%;
+        width: 50%;
         justify-content: space-between;
         align-items: center;
         border: 1px solid var(--popup);
@@ -361,17 +360,12 @@
         }
 
         &__input {
-            width: 226px;
             padding-left: 15px;
             margin: 0;
 
             &_volume {
                 width: 40%;
                 color: var(--form-input);
-            }
-
-            &_tel {
-                width: 70%;
             }
 
             &_name {

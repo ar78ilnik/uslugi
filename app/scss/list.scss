@@ -74,6 +74,12 @@
             column-gap: 10px;
         }
 
+        &_country {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
         &_attend {
             width: 290px;
             height: 195px;

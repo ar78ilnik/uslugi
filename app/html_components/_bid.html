@@ -2,9 +2,9 @@
     <div class="bid__wrapper">
         <h2 class="title title_h2-bid">Получить консультацию</h2>
         <button class="bid__close" type="button">
-            <svg class="icon icon_bid" aria-hidden="true">
-                <use class="menu__icon_bid" xlink:href="img/sprite.svg#cross-bid"></use>
-            </svg>
+        <svg class="icon icon_bid" aria-hidden="true">
+            <use class="menu__icon_bid" xlink:href="img/sprite.svg#cross-bid"></use>
+        </svg>
         </button>
         <main class="main main_bid">
             <div class="bid__adres">
@@ -12,33 +12,33 @@
             </div>
             <div class="bid__times">
                 <details class="bid__det">
-                    <summary class="bid__sum">
-                        <div class="bid__sum-wrapper">
-                            <span class="bid__day bid__day_sum">Сегодня</span>
-                            <span class="bid__hours bid__hours_sum">09:00 - 18:00</span>
-                        </div>
-                        <svg class="icon icon_days">
-                            <use xlink:href="img/sprite.svg#arrow"></use>
-                        </svg>
-                    </summary>
-                    <ul class="bid__list-times">
-                        <li class="bid__item-times">
-                            <span class="bid__day">ВТ</span>
-                            <span class="bid__hours">09:00 - 18:00</span>
-                        </li>
-                        <li class="bid__item-times">
-                            <span class="bid__day">СР</span>
-                            <span class="bid__hours">09:00 - 18:00</span>
-                        </li>
-                        <li class="bid__item-times">
-                            <span class="bid__day">ЧТ</span>
-                            <span class="bid__hours">09:00 - 18:00</span>
-                        </li>
-                        <li class="bid__item-times">
-                            <span class="bid__day">ПТ</span>
-                            <span class="bid__hours">09:00 - 18:00</span>
-                        </li>
-                    </ul>
+                <summary class="bid__sum">
+                <div class="bid__sum-wrapper">
+                    <span class="bid__day bid__day_sum">Сегодня</span>
+                    <span class="bid__hours bid__hours_sum">09:00 - 18:00</span>
+                </div>
+                <svg class="icon icon_days">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+                </summary>
+                <ul class="bid__list-times">
+                    <li class="bid__item-times">
+                        <span class="bid__day">ВТ</span>
+                        <span class="bid__hours">09:00 - 18:00</span>
+                    </li>
+                    <li class="bid__item-times">
+                        <span class="bid__day">СР</span>
+                        <span class="bid__hours">09:00 - 18:00</span>
+                    </li>
+                    <li class="bid__item-times">
+                        <span class="bid__day">ЧТ</span>
+                        <span class="bid__hours">09:00 - 18:00</span>
+                    </li>
+                    <li class="bid__item-times">
+                        <span class="bid__day">ПТ</span>
+                        <span class="bid__hours">09:00 - 18:00</span>
+                    </li>
+                </ul>
                 </details>
             </div>
             <div class="bid__tel">
@@ -55,22 +55,27 @@
                                 <svg class="icon icon_country-check">
                                     <use xlink:href="img/sprite.svg#arrow"></use>
                                 </svg>
-                                <div class="icon icon_ru"></div>
+                                <div class="icon icon-country"></div>
                                 <span class="form__country">+7</span>
                                 <ul class="list list_country">
-                                    <li class="list__item">
-                                        <div class="icon icon_ua"></div>
+                                    <li class="list__item list__item_country" data-dial-code="380">
+                                        <div class="icon icon-country_ua"></div>
                                         <span class="form__name-country">Украина</span>
                                         <span class="form__country"> +380</span>
                                     </li>
-                                    <li class="list__item">
-                                        <div class="icon icon_by"></div>
+                                    <li class="list__item list__item_country" data-dial-code="375">
+                                        <div class="icon icon-country_by"></div>
                                         <span class="form__name-country">Беларусь</span>
                                         <span class="form__country"> +375</span>
                                     </li>
+                                    <li class="list__item list__item_country" data-dial-code="7">
+                                        <div class="icon icon-country_ru"></div>
+                                        <span class="form__name-country">Россия</span>
+                                        <span class="form__country"> +7</span>
+                                    </li>
                                 </ul>
                             </div>
-                            <input type="text" class="form__input form__input_tel" name="tel" placeholder="___ ___-__-__" autocomplete="off">
+                            <input type="tel" class="form__input form__input_tel" name="tel" placeholder="___ ___-__-__" autocomplete="off">
                         </div>
                         <textarea class="bid__textarea" name="message" id="bid-textarea" placeholder="Сообщение"></textarea>
                         <p class="form__bid-check">
