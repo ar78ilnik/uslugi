@@ -14,7 +14,8 @@
                 <details class="bid__det">
                 <summary class="bid__sum">
                 <div class="bid__sum-wrapper">
-                    <span class="bid__day bid__day_sum">Сегодня</span>
+                    <span class="bid__today">Сегодня</span>
+                    <span class="bid__dot"></span>
                     <span class="bid__hours bid__hours_sum">09:00 - 18:00</span>
                 </div>
                 <svg class="icon icon_days">
@@ -22,6 +23,10 @@
                 </svg>
                 </summary>
                 <ul class="bid__list-times">
+                    <li class="bid__item-times">
+                        <span class="bid__day">ПН</span>
+                        <span class="bid__hours">09:00 - 18:00</span>
+                    </li>
                     <li class="bid__item-times">
                         <span class="bid__day">ВТ</span>
                         <span class="bid__hours">09:00 - 18:00</span>
@@ -79,7 +84,7 @@
                         </div>
                         <textarea class="bid__textarea" name="message" id="bid-textarea" placeholder="Сообщение"></textarea>
                         <p class="form__bid-check">
-                            <input class="form__check_bid" id="check-bid" type="checkbox">
+                            <input class="form__check_bid" id="check-bid" type="checkbox" required>
                             <label for="check-bid" class="form__label form__label_bid">Я даю согласие на обработку моих персональных данных</label>
                         </p>
                         <div class="form__code">

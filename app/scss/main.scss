@@ -1,6 +1,7 @@
 /* Main */
 .main {
-    &_bid {
+    &_bid,
+    &_consult {
         background-color: var(--white);
         grid-column: 1/3;
         grid-row: 2/3;

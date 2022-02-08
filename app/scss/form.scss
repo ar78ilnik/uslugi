@@ -210,7 +210,8 @@
     &__label {
         display: block;
 
-        &_bid {
+        &_bid,
+        &_consult {
             color: var(--captcha);
             font-size: 0.8rem;
         }
@@ -263,7 +264,8 @@
         margin-bottom: 34px;
     }
 
-    &__check_bid {
+    &__check_bid,
+    &__check_consult {
         display: block;
         width: 32px;
         height: 18px;
@@ -274,7 +276,8 @@
         background-color: var(--check-bid-hover);
     }
 
-    &__bid-check {
+    &__bid-check,
+    &__consult-check {
         display: flex;
         justify-content: space-between;
         gap: 10px;

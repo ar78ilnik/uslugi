@@ -1,0 +1,57 @@
+<div class="consult">
+    <div class="consult__wrapper">
+        <h2 class="title title_h2-consult">Получить консультацию</h2>
+        <button class="consult__close" type="button">
+        <svg class="icon icon_consult" aria-hidden="true">
+            <use class="menu__icon_consult" xlink:href="img/sprite.svg#cross-bid"></use>
+        </svg>
+        </button>
+        <main class="main main_consult">
+            <div class="consult__form">
+                <form action="script.php" class="form form_consult">
+                    <fieldset class="consult__fieldset">
+                        <legend class="consult__legend">Заказать услугу</legend>
+                        <input type="text" class="form__input form__input_name" placeholder="Имя" name="Имя">
+                        <div class="form__tel-wrapper">
+                            <div class="form__tel-pais">
+                                <svg class="icon icon_country-check">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                </svg>
+                                <div class="icon icon-country"></div>
+                                <span class="form__country">+7</span>
+                                <ul class="list list_country">
+                                    <li class="list__item list__item_country" data-dial-code="380">
+                                        <div class="icon icon-country_ua"></div>
+                                        <span class="form__name-country">Украина</span>
+                                        <span class="form__country"> +380</span>
+                                    </li>
+                                    <li class="list__item list__item_country" data-dial-code="375">
+                                        <div class="icon icon-country_by"></div>
+                                        <span class="form__name-country">Беларусь</span>
+                                        <span class="form__country"> +375</span>
+                                    </li>
+                                    <li class="list__item list__item_country" data-dial-code="7">
+                                        <div class="icon icon-country_ru"></div>
+                                        <span class="form__name-country">Россия</span>
+                                        <span class="form__country"> +7</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="tel" class="form__input form__input_tel" name="tel" placeholder="___ ___-__-__" autocomplete="off">
+                        </div>
+                        <textarea class="consult__textarea" name="message" id="consult-textarea" placeholder="Сообщение"></textarea>
+                        <p class="form__consult-check">
+                            <input class="form__check_consult" id="check-consult" type="checkbox" required>
+                            <label for="check-consult" class="form__label form__label_consult">Я даю согласие на обработку моих персональных данных</label>
+                        </p>
+                        <div class="form__code">
+                            <div class="form__code-numbers"></div>
+                            <input type="text" class="form__captcha" placeholder="Введите код">
+                        </div>
+                    </fieldset>
+                    <button class="button_consult" type="submit">Отправить сообщение</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</div>
