@@ -1,8 +1,5 @@
 (() => {
-    let footerDet = document.querySelectorAll('.footer__det'),
-        formTelPais = document.querySelector('.form__tel-pais'),
-        iconCountryCheck = document.querySelector('.icon_country-check'),
-        listCountry = document.querySelector('.list_country');
+    let footerDet = document.querySelectorAll('.footer__det');
 
     if (window.innerWidth < 1220) {
         footerDet.forEach(item => {
@@ -13,6 +10,36 @@
             item.setAttribute('open', true);
         })
     }
+
+    function openList(targetSelector, listSelector, iconSelector) {
+        const target = document.querySelectorAll(targetSelector),
+                list = document.querySelectorAll(listSelector),
+                icon = document.querySelectorAll(iconSelector);
+                target.forEach((item, i) => {
+                    item.addEventListener('click', ()=> {
+                        list[i].classList.toggle('list_country-open');
+                        icon[i].classList.toggle('icon_country-check-open');
+                    });
+                });
+    }
+
+    function setCountry(elemSelector, countrySelector, iconSelector) {
+        const elem = document.querySelectorAll(elemSelector),
+                country = document.querySelector(countrySelector),
+                icon = document.querySelector(iconSelector);
+
+        let attr = [];
+        elem.forEach((item,i) => {
+            attr[i] = item.getAttribute('data-dial-code');
+            item.addEventListener('click', ()=> {
+                country.textContent = '+' + attr[i];
+                icon.style.backgroundImage = "url('../img/" + attr[i] + ".png')";
+            });
+        });
+    }
+
+    //setCountry('.list__item_country', '.form__country-bid', '.icon-country_bid');
+    //setCountry('.list__item_country', '.form__country-consult', '.icon-country_consult');
 
     function setDay(detSelector, sumSelector, dotSelector) {
         let elem = document.querySelector(detSelector),
@@ -29,21 +56,6 @@
         } else {
             dot.style.backgroundColor = 'green';
         }
-    }
-
-    function setFlag(elemSelector, countrySelector, iconSelector) {
-        const elem = document.querySelectorAll(elemSelector),
-                country = document.querySelector(countrySelector),
-                icon = document.querySelector(iconSelector);
-
-        let attr = [];
-        elem.forEach((item,i) => {
-            attr[i] = item.getAttribute('data-dial-code');
-            item.addEventListener('click', ()=> {
-            country.textContent = '+' + attr[i];
-            icon.style.backgroundImage = "url('../img/" + attr[i] + ".png')";
-            })
-        });
     }
 
     function bindModal(triggerSelector, modalSelector, closeSelector) {
@@ -152,14 +164,11 @@
     }
 
     bindModal('.menu__button', '.container_popup', '.menu__close');
-    setFlag('.list__item_country', '.form__country', '.icon-country');
+    setCountry('.list__item_country', '.form__country-bid', '.icon-country_bid');
+    setCountry('.list__item_country', '.form__country-consult', '.icon-country_consult');
     forms();
     setDay('.bid__det', '.bid__sum', '.bid__dot');
     consultPopup('.link_blue-about', '.bid', '.bid__close');
     consultPopup('.link_blue-order', '.consult', '.consult__close');
-
-    formTelPais.addEventListener('click', () => {
-        listCountry.classList.toggle('list_country-open');
-        iconCountryCheck.classList.toggle('icon_country-check-open');
-    })
+    openList('.form__tel-pais', '.list_country', '.icon_country-check');
 })();

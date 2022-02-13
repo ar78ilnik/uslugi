@@ -27,10 +27,13 @@
     }
 
     &-country {
-        background-image: url(../img/7.png);
-        width: 24px;
-        height: 24px;
-        margin-left: 15px;
+        &_bid,
+        &_consult {
+            background-image: url(../img/7.png);
+            width: 24px;
+            height: 24px;
+            margin-left: 15px;
+        }
         &_ua {
             background-image: url(../img/380.png);
             width: 24px;
